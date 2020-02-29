@@ -1,114 +1,123 @@
 <!DOCTYPE html>
-<html>
+<html lang="">
 <head>
-  <title>Joseph Chen - Deep Learning and Web Development</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link href="style.css" rel="stylesheet"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="static/animation.css">
+    <link rel="stylesheet" href="static/largeScreen.css">
+    <script src="https://kit.fontawesome.com/dece7f23a7.js" crossorigin="anonymous"></script>
+    <title>Joseph Chen</title>
 </head>
 
 <body>
-<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main">
-        <span class="sr-only">Toggle navigation</span> <!--- for mobile that don't know that a navbar is there --->
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-
-      <a class="navbar-brand" href="#home">JOSEPH CHEN</a>
-
-    </div>
-    <div class="collapse navbar-collapse" id="navbar-collapse-main">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects and Research</a></li>
-        <li><a href="Resume.pdf">Resume</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1>Hi! I'm Joseph!</h1>
+      <p>Just some high school nerd who loves AI research and web development!</p>
+      <div class="two-button-grid" style="margin-top: 5%;">
+        <a href="#contact" class="button1" style="margin-top: 5%;">Contact</a>
+        <a href="resources/resume.pdf" class="button1" style="margin-top: 5%;">Resume</a>
+      </div>
     </div>
   </div>
-</nav>
 
-<div id="home">
-  <div class="landing-text">
-      <h1>Joseph Chen</h1>
-      <h3>High school deep learning researcher and upcoming web developer</h3>
+  <!-- research info -->
+  <div class="header-wrapper">
+    <div class="animation-element slide-left section-header">
+      <h1>I. Research</h1>
+    </div>
   </div>
-</div>
 
-<div class="padding">
-<div class="container">
-    <h2 align="center">About Me</h2>
-    <p class="lead">Hi! I do independent, original deep learning research and some web development for the ultimate
-    goal of helping as many people as I can. I like to mainly focus on solving problems in medicine with deep learning, but currently, I'm branching
-    out and working at a startup (can't say what it's for yet) and leading a web development project.
-    </p>
-    <p class="lead">For my previous research projects, I advanced to the finals for multiple competitions (namely
-      New York City Science and Engineering Fair (NYCSEF) and Junior Science and Humanities Symposia (JSHS))
-      and won some awards, most notably a $500 money award at NYCSEF 2018. These competitions are full-fledged
-      fairs that have judges decide whether or not you advance or not.
-    </p>
-    <p class="lead">At my school, Queens High School for the Sciences at York College (long, I know),
-      I lead the Math Research program at as a TA, where I mentor upcoming student researchers and ease
-      them into eventually becoming lab interns at research institutions (NASA, Duke, Mt.Sinai).
-      Aside from research, I'm the co-captain of the QHSS Robotics team and am the president of a
-      computer science club, QHSS Cyber, which is where I'm actually leading the aforementioned web
-      development project of an official website to host future club projects (making websites to host AI apps).
-      I've also been performed for my school's KPOP dance club for two years, and I love to play volleyball
-      (and learn how to treat my various injuries).
-    </p>
-    <p class="lead">Enough about me though! If you actually stayed until the end of my introduction, I'm
-      curious: How can I help you? 
-</div>
-</div>
+  <div class="info-container-wrapper">
+    <div class="animation-element slide-left info-container info">
+      <h1>Capsule Networks for the Automated Segmentation of Left Atrium in Cardiac MRI</h1>
+      <img src="img/la_003.gif" alt="GIF">
+      <div class="two-button-grid">
+        <a href="https://github.com/jchen42703/CapsNetsLASeg" class="button1">Code</a>
+        <a href="resources/Capsule_Networks_for_the_Automated_Segmentation_of_the_Left_Atrium_in_Cardiac_MRI.pdf" class="button1">Paper</a>
+      </div>
+    </div>
 
-<div id="fixed">
-</div>
+    <div class="animation-element slide-left info-container info">
+      <h1>2D Convolutional Neural Networks for Automated Kidney and Renal Tumor Segmentation</h1>
+      <img src="img/label_case_00113.png" alt="IMG">
+      <div class="two-button-grid">
+        <a href="https://github.com/jchen42703/kits19-cnn" class="button1">Code</a>
+        <a href="https://kits.lib.umn.edu/wp-content/uploads/2019/11/jchen3_2.pdf" class="button1">Publication</a>
+      </div>
+    </div>
+  </div>
 
-<footer class="container-fluid text-center">
-  <div class="col-sm-12">
+  <!-- Web dev info -->
+  <div class="header-wrapper">
+    <div class="animation-element slide-left section-header">
+      <h1>II. Web Development</h1>
+    </div>
+  </div>
+
+  <div class="info-container-wrapper">
+    <div class="animation-element slide-left info-container info">
+      <h1>MIT Hacking Medicine 2019 Submission</h1>
+      <span>An App for Automatically Detecting Blast Cells</span>
+      <br>
+      <img src="img/hackathon_app_faster.gif" alt="GIF">
+      <br>
+      <a href="https://github.com/jchen42703/hacking_medicine_2019" class="button1">Code</a>
+    </div>
+
+    <div class="animation-element slide-left info-container info">
+      <h1>QHSS Cyber</h1>
+      <span>President</span>
+      <br>
+      <span>Web Development Club // Hosting workshops and working on collaborative projects</span>
+      <br>
+      <img src="img/qhsscyber_v2_demo.gif" alt="GIF">
+      <br>
+      <a href="https://qhsscyber.github.io/" class="button1">Website</a>
+    </div>
+  </div>
+
+  <!-- kaggle -->
+  <div class="header-wrapper">
+    <div class="animation-element slide-left section-header">
+      <h1>III. Kaggle</h1>
+    </div>
+  </div>
+
+  <div class="info-container-wrapper">
+    <div class="animation-element slide-left info-container info">
+      <h1>Severstal: Steel Defect Detection Challenge</h1>
+      <span>171/2431</span>
+      <br><br>
+      <a href="https://github.com/jchen42703/understanding-clouds-kaggle" class="button1">Code</a>
+    </div>
+
+    <div class="animation-element slide-left info-container info">
+      <h1>Understanding Clouds from Satellite Images</h1>
+      <span>247/1538</span>
+      <br><br>
+      <a href="https://github.com/jchen42703/steel-defect-detection" class="button1">Code</a>
+    </div>
+  </div>
+
+  <footer>
     <h3 id="contact">Contact</h3>
-    <span>Contact me at jchen42703 "at" gmail "dot" com or at the links on the right.</span>
+    <span>Contact me at jchen42703 "at" gmail "dot" com or at the links below.</span>
     <br>
-    <a href="https://github.com/jchen42703" class="fa fa-github"></a>
-    <a href="https://www.linkedin.com/in/joseph-chen-47b74615a/" class="fa fa-linkedin"></a>
-    <a href="https://www.instagram.com/mexicanfiesta420/" class="fa fa-instagram"></a>
-  </div>
-  </div>
-</footer>
+    <a href="https://www.linkedin.com/in/joseph-chen-47b74615a/">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://github.com/jchen42703">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="https://www.instagram.com/jchen___zz/">
+      <i class="fab fa-instagram"></i>
+    </a>
+  </footer>
+
+  <script type="text/javascript" src="static/animation.js"></script>
 
 </body>
+
 </html>
-
-
-
-
-
-<!--- iOS Landing Page Fix
-<section>
-	<div class="landing-text">
-		<h1>BOOTSTRAP</h1>
-		<h3>Learn the basic building blocks.</h3>
-		<a href="#" class="btn btn-default btn-lg">Get Started</a>
-	</div>
-	<div class="home-wrap">
-        <div id="home">
-		</div>
-    </div>
-</section>
--->
-
-<!--- iOS Fixed Image Fix
-<figure>
-	<div class="fixed-wrap">
-        <div id="fixed">
-		</div>
-    </div>
-</figure>
--->
