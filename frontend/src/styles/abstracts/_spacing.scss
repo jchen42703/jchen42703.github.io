@@ -1,0 +1,22 @@
+.margin-top-5per {
+  margin-top: 5%;
+}
+
+.margin-bot-5per {
+  margin-bottom: 5%;
+}
+
+@mixin w-full {
+  width: 100%;
+}
+
+@mixin w-screen-full {
+  width: 100vw;
+}
+@mixin h-full {
+  height: 100%;
+}
+
+@mixin h-screen-full {
+  height: 100vh;
+}
