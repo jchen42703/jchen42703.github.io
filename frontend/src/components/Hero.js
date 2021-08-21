@@ -5,20 +5,13 @@ const margins = {
   marginTop: "7%",
 };
 
-const twoButtonGrid = {
-  display: "grid",
-  gridTemplateColumns: "1fr 1fr",
-  gridGap: "10%",
-  padding: "0 5%",
-};
-
 const Hero = (props) => {
   return (
     <div className="hero-image">
       <div className="hero-text">
         <h1>Hi! I'm Joseph!</h1>
-        <p>Student Web developer & Deep Learning Researcher</p>
-        <div style={{ ...margins, ...twoButtonGrid }}>
+        <p>Student Web Developer & Deep Learning Researcher</p>
+        <div style={margins} className="two-button-grid">
           <TextButton text="Contact" linkHref="#contact"></TextButton>
           <TextButton
             text="Resume"

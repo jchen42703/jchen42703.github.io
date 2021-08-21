@@ -1,7 +1,6 @@
 @import "../abstracts/global.scss";
 
 @mixin btn($baseColor, $contrastColor) {
-  @include w-full;
   @include font-medium;
   color: $baseColor;
   text-decoration: underline;

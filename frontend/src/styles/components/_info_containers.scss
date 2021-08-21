@@ -1,0 +1,38 @@
+@import "../abstracts/global.scss";
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  align-items: center;
+  color: $light;
+  background-color: #c25349;
+  text-align: center;
+  padding-bottom: 5%;
+
+  h1 {
+    color: $light;
+    padding: 5% 5% 3% 5%;
+  }
+
+  img {
+    margin: 5% 0;
+    width: 60%;
+    object-fit: scale-down;
+  }
+}
+
+@media (min-width: 768px) {
+  .info-container-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  .info-container img {
+    margin: 5% 0;
+    width: 60%;
+    max-height: 40vh;
+    border: none;
+  }
+}
