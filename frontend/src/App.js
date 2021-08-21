@@ -1,4 +1,5 @@
 import { DarkHeader } from "./components/Headers";
+import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import TextButton from "./components/TextButton";
 import capsnetGif from "./img/la_003.gif";
@@ -104,6 +105,7 @@ function App() {
           ></TextButton>
         </div>
       </div>
+      <Footer></Footer>
     </div>
   );
 }
