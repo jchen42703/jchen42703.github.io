@@ -1,11 +1,9 @@
 import { DarkHeader } from "./components/Headers";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
+import VideoGIF from "./components/VideoGIF";
 import TextButton from "./components/TextButton";
-import capsnetVid from "./assets/la_003.mp4";
 import kitsCase from "./assets/label_case_00113.png";
-import hackathon from "./assets/hackathon.mp4";
-import qhssCyber from "./assets/qhssCyber.mp4";
 import "./styles/styles.scss";
 
 const w80 = {
@@ -23,9 +21,7 @@ function App() {
             Capsule Networks for the Automated Segmentation of Left Atrium in
             Cardiac MRI
           </h1>
-          <video autoPlay={true} loop={true} muted={true} playsInline={true}>
-            <source src={capsnetVid} type="video/mp4" />
-          </video>
+          <VideoGIF src={require("./assets/la_003.mp4").default}></VideoGIF>
           <div className="two-button-grid">
             <TextButton
               text="Code"
@@ -60,9 +56,7 @@ function App() {
         <div className="info-container">
           <h1>MIT Hacking Medicine 2019 Submission</h1>
           <p>An App for Automatically Detecting Blast Cells</p>
-          <video autoPlay={true} loop={true} muted={true} playsInline={true}>
-            <source src={hackathon} type="video/mp4" />
-          </video>
+          <VideoGIF src={require("./assets/hackathon.mp4").default}></VideoGIF>
           <TextButton
             text="Website"
             linkHref="https://github.com/jchen42703/hacking_medicine_2019"
@@ -76,9 +70,7 @@ function App() {
             Web Development Club // Hosting workshops and working on
             collaborative projects
           </p>
-          <video autoPlay={true} loop={true} muted={true} playsInline={true}>
-            <source src={qhssCyber} type="video/mp4" />
-          </video>
+          <VideoGIF src={require("./assets/qhssCyber.mp4").default}></VideoGIF>
           <TextButton
             text="Website"
             linkHref="https://qhsscyber.github.io/"
