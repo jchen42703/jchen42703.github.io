@@ -2,18 +2,14 @@ import { DarkHeader } from "./components/Headers";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import TextButton from "./components/TextButton";
-import capsnetVid from "./img/la_003.mp4";
-import kitsCase from "./img/label_case_00113.png";
-import hackathon from "./img/hackathon_app_faster.gif";
-import qhssCyber from "./img/qhsscyber_v2_demo.gif";
+import capsnetVid from "./assets/la_003.mp4";
+import kitsCase from "./assets/label_case_00113.png";
+import hackathon from "./assets/hackathon.mp4";
+import qhssCyber from "./assets/qhssCyber.mp4";
 import "./styles/styles.scss";
 
 const w80 = {
   width: "80%",
-};
-
-const block = {
-  display: "block",
 };
 
 function App() {
@@ -27,7 +23,7 @@ function App() {
             Capsule Networks for the Automated Segmentation of Left Atrium in
             Cardiac MRI
           </h1>
-          <video autoPlay="true" loop="true" muted="true" playsInline="true">
+          <video autoPlay={true} loop={true} muted={true} playsInline={true}>
             <source src={capsnetVid} type="video/mp4" />
           </video>
           <div className="two-button-grid">
@@ -46,7 +42,7 @@ function App() {
             2D Convolutional Neural Networks for Automated Kidney and Renal
             Tumor Segmentation
           </h1>
-          <img src={kitsCase} alt="IMG" />
+          <img src={kitsCase} alt="" />
           <div className="two-button-grid">
             <TextButton
               text="Code"
@@ -64,21 +60,25 @@ function App() {
         <div className="info-container">
           <h1>MIT Hacking Medicine 2019 Submission</h1>
           <p>An App for Automatically Detecting Blast Cells</p>
-          <img src={hackathon} alt="GIF" style={block} />
+          <video autoPlay={true} loop={true} muted={true} playsInline={true}>
+            <source src={hackathon} type="video/mp4" />
+          </video>
           <TextButton
             text="Website"
             linkHref="https://github.com/jchen42703/hacking_medicine_2019"
           ></TextButton>
         </div>
 
-        <div class="info-container">
+        <div className="info-container">
           <h1>QHSS Cyber</h1>
           <p>President</p>
           <p>
             Web Development Club // Hosting workshops and working on
             collaborative projects
           </p>
-          <img src={qhssCyber} alt="GIF" style={block} />
+          <video autoPlay={true} loop={true} muted={true} playsInline={true}>
+            <source src={qhssCyber} type="video/mp4" />
+          </video>
           <TextButton
             text="Website"
             linkHref="https://qhsscyber.github.io/"
@@ -87,8 +87,8 @@ function App() {
       </div>
 
       <DarkHeader text="III. Kaggle"></DarkHeader>
-      <div class="info-container-wrapper">
-        <div class="info-container">
+      <div className="info-container-wrapper">
+        <div className="info-container">
           <h1>Severstal: Steel Defect Detection Challenge</h1>
           <p>171/2431</p>
           <TextButton
@@ -97,7 +97,7 @@ function App() {
           ></TextButton>
         </div>
 
-        <div class="info-container">
+        <div className="info-container">
           <h1>Understanding Clouds from Satellite Images</h1>
           <p>247/1538</p>
           <TextButton
