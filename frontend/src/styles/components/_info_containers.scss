@@ -29,7 +29,8 @@
     grid-template-rows: auto;
   }
 
-  .info-container img {
+  .info-container img,
+  video {
     margin: 5% 0;
     width: 60%;
     max-height: 40vh;

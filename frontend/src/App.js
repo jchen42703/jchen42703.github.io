@@ -2,7 +2,7 @@ import { DarkHeader } from "./components/Headers";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import TextButton from "./components/TextButton";
-import capsnetGif from "./img/la_003.gif";
+import capsnetVid from "./img/la_003.mp4";
 import kitsCase from "./img/label_case_00113.png";
 import hackathon from "./img/hackathon_app_faster.gif";
 import qhssCyber from "./img/qhsscyber_v2_demo.gif";
@@ -27,7 +27,9 @@ function App() {
             Capsule Networks for the Automated Segmentation of Left Atrium in
             Cardiac MRI
           </h1>
-          <img src={capsnetGif} alt="loading..." />
+          <video autoPlay="true" loop="true" muted="true" playsInline="true">
+            <source src={capsnetVid} type="video/mp4" />
+          </video>
           <div className="two-button-grid">
             <TextButton
               text="Code"
