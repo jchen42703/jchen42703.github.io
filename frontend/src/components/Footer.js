@@ -6,7 +6,8 @@ const Footer = (props) => {
     <footer>
       <h3 id="contact">Contact</h3>
       <p>
-        Contact me at jchen42703 "at" gmail "dot" com or at the links below.
+        Contact me at jchen42703 "at" gmail "dot" com or at jxc1598 "at"
+        case.edu.
       </p>
       <a
         href="https://www.linkedin.com/in/joseph-chen-47b74615a/"
