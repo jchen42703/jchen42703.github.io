@@ -10,6 +10,13 @@ NGinx runs on port 80 by default and we want to map it to our system's port 3000
 docker run -dp 3000:80 frontend
 ```
 
+Pushing to public docker repo:
+
+```
+docker tag frontend jchen42703/personal-website-jc
+docker push jchen42703/personal-website-jc
+```
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
