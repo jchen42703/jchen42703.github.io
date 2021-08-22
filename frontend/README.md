@@ -1,3 +1,15 @@
+# Docker Builds
+
+```
+docker build -t frontend .
+```
+
+NGinx runs on port 80 by default and we want to map it to our system's port 3000, so we call `-dp 3000:80`
+
+```
+docker run -dp 3000:80 frontend
+```
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
