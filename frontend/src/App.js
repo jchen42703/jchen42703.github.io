@@ -29,7 +29,10 @@ function App() {
             ></TextButton>
             <TextButton
               text="Paper"
-              linkHref="resources/Capsule_Networks_for_the_Automated_Segmentation_of_the_Left_Atrium_in_Cardiac_MRI.pdf"
+              linkHref={
+                require("./assets/pdf/Capsule_Networks_for_the_Automated_Segmentation_of_the_Left_Atrium_in_Cardiac_MRI.pdf")
+                  .default
+              }
             ></TextButton>
           </div>
         </div>

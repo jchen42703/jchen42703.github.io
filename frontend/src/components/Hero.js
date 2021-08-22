@@ -15,7 +15,7 @@ const Hero = (props) => {
           <TextButton text="Contact" linkHref="#contact"></TextButton>
           <TextButton
             text="Resume"
-            linkHref="../resources/resume.pdf"
+            linkHref={require("../assets/pdf/resume.pdf").default}
           ></TextButton>
         </div>
       </div>

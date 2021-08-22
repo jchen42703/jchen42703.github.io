@@ -4,8 +4,9 @@ const TextButton = ({ text, linkHref }) => {
   return (
     <a
       href={linkHref}
-      className="lightHoverButton {
-      "
+      className="lightHoverButton"
+      target="_blank"
+      rel="noreferrer"
     >
       {text}
     </a>
