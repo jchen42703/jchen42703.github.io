@@ -1,20 +1,14 @@
 # Docker Builds
 
 ```
-docker build -t frontend .
-```
+// build
+docker build -t jchen42703/chenjoseph .
 
-NGinx runs on port 80 by default and we want to map it to our system's port 3000, so we call `-dp 3000:80`
+// NGinx runs on port 80 by default and we want to map it to our system's port 3000, so we call `-dp 3000:80`
+docker run -dp 3000:80 jchen42703/chenjoseph
 
-```
-docker run -dp 3000:80 frontend
-```
-
-Pushing to public docker repo:
-
-```
-docker tag frontend jchen42703/personal-website-jc
-docker push jchen42703/personal-website-jc
+// Push to public repo for easy deployment
+docker push jchen42703/chenjoseph:latest
 ```
 
 # Getting Started with Create React App
