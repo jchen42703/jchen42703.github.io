@@ -11,6 +11,15 @@ docker run -dp 3000:80 jchen42703/chenjoseph
 docker push jchen42703/chenjoseph:latest
 ```
 
+# Caprover Setup
+
+https://caprover.com/docs/get-started.html#setup-domain-and-dns
+
+```
+// disable firewall
+ufw allow 80,443,3000,996,7946,4789,2377/tcp; ufw allow 7946,4789,2377/udp;
+```
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
