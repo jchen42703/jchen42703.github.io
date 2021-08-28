@@ -25,10 +25,21 @@ function App() {
               className="fontawesome"
             />
           </a>
+          <span style={{ "font-weight": "600" }}>August 2021 - Now</span>
+          <p style={{ padding: "0% 5%" }}>
+            Backend developer (Go Lang and NodeJS) for Rattenfanger's bot bypass
+            REST APIs in a small team environment.
+          </p>
+          <span style={{ "font-weight": "600" }}>Summer 2021</span>
+          <p style={{ padding: "0% 5%" }}>
+            Frontend development for an inventory tracking mobile app with Vue,
+            Ionic and Tailwind CSS in a small team environment. Release date
+            TBD.
+          </p>
           <VideoGIF
             src={require("./assets/ai_mouse_movements.mp4").default}
           ></VideoGIF>
-          <span style={{ "font-weight": "600" }}>Summer 2019-2020 </span>
+          <span style={{ "font-weight": "600" }}>Summer 2020 - Fall 2020 </span>
           <p style={{ padding: "0% 5%" }}>
             Developed a Bidirectional LSTM GAN to automate mouse movements and
             deployed the model to a production REST API using Tensorflow.js and
