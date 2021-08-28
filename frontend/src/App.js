@@ -25,7 +25,7 @@ function App() {
               className="fontawesome"
             />
           </a>
-          <span style={{ "font-weight": "600" }}>August 2021 - Now</span>
+          <span style={{ fontWeight: "600" }}>August 2021 - Now</span>
           <p style={{ padding: "0% 5%" }}>
             Backend developer (Go Lang and NodeJS) for Rattenfanger's bot bypass
             REST APIs in a small team environment.
@@ -88,13 +88,31 @@ function App() {
         </div>
       </div>
       <DarkHeader text="III. Web Development"></DarkHeader>
+      <div className="info-container-wrapper-single">
+        <div className="info-container" style={{ padding: "0%" }}>
+          <h1>Logos Community Church Website</h1>
+          <p style={{ padding: "0%" }}>
+            Static website with HTML and SCSS deployed using Github Pages
+          </p>
+          <VideoGIF
+            src={require("./assets/small_lcc_github_io.mp4").default}
+          ></VideoGIF>
+          <div className="two-button-grid">
+            <TextButton text="Website" linkHref="em.logosny.org"></TextButton>
+            <TextButton
+              text="Code"
+              linkHref="https://github.com/logosnyc/logosnyc.github.io"
+            ></TextButton>
+          </div>
+        </div>
+      </div>
       <div className="info-container-wrapper">
         <div className="info-container">
           <h1>MIT Hacking Medicine 2019 Submission</h1>
           <p>An App for Automatically Detecting Blast Cells</p>
           <VideoGIF src={require("./assets/hackathon.mp4").default}></VideoGIF>
           <TextButton
-            text="Website"
+            text="Code"
             linkHref="https://github.com/jchen42703/hacking_medicine_2019"
           ></TextButton>
         </div>
