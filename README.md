@@ -71,7 +71,7 @@ sudo systemctl status nginx
 ```
 ssh root@174.138.59.59
 cd jchen42703.github.io/frontend/
-git checkout main
+git checkout master
 git pull origin
 npm install .
 npm run build
