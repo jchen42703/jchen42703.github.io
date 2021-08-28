@@ -10,7 +10,8 @@ const Hero = (props) => {
     <div className="hero-image">
       <div className="hero-text">
         <h1>Hi! I'm Joseph!</h1>
-        <p>Student Web Developer & Deep Learning Researcher</p>
+        <span>Sophomore @ CWRU</span>
+        <p>Software Engineer & Deep Learning Researcher @ Rattenfanger.io</p>
         <div style={margins} className="two-button-grid">
           <TextButton text="Contact" linkHref="#contact"></TextButton>
           <TextButton

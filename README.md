@@ -1,6 +1,9 @@
 # Setup Script (All)
 
+Everything in one place for convenience. To see the break down, skip this section.
+
 ```
+// add ssh key to digital ocean prior to ssh
 ssh root@174.138.59.59
 sudo ufw enable
 ufw allow 80,443,3000,996,7946,4789,2377/tcp; ufw allow 7946,4789,2377/udp
@@ -62,6 +65,29 @@ sudo systemctl reload nginx
 
 sudo systemctl status nginx
 ```
+
+# New Build?
+
+```
+ssh root@174.138.59.59
+cd jchen42703.github.io/frontend/
+git checkout main
+git pull origin
+npm install .
+npm run build
+
+rm -rf /var/www/html/*
+
+cp -r build/* /var/www/html/
+
+sudo systemctl reload nginx
+```
+
+# From Scratch
+
+See below
+
+---
 
 # NGinx Only
 

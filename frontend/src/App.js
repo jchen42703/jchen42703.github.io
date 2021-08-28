@@ -1,4 +1,5 @@
 import { DarkHeader } from "./components/Headers";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import VideoGIF from "./components/VideoGIF";
@@ -14,7 +15,39 @@ function App() {
   return (
     <div className="full-container">
       <Hero></Hero>
-      <DarkHeader text="I. Research"></DarkHeader>
+      <DarkHeader text="I. Work Experience"></DarkHeader>
+      <div className="info-container-wrapper-col">
+        <div className="info-container">
+          <h1 style={{ padding: "5% 5% 0% 5%" }}>Rattenfanger</h1>
+          <a href=" https://twitter.com/rattenfangerio" className="fab">
+            <FontAwesomeIcon
+              icon={["fab", "twitter"]}
+              className="fontawesome"
+            />
+          </a>
+          <span style={{ fontWeight: "600" }}>August 2021 - Now</span>
+          <p style={{ padding: "0% 5%" }}>
+            Backend developer (Go Lang and NodeJS) for Rattenfanger's bot bypass
+            REST APIs in a small team environment.
+          </p>
+          <span style={{ "font-weight": "600" }}>Summer 2021</span>
+          <p style={{ padding: "0% 5%" }}>
+            Frontend development for an inventory tracking mobile app with Vue,
+            Ionic and Tailwind CSS in a small team environment. Release date
+            TBD.
+          </p>
+          <VideoGIF
+            src={require("./assets/ai_mouse_movements.mp4").default}
+          ></VideoGIF>
+          <span style={{ "font-weight": "600" }}>Summer 2020 - Fall 2020 </span>
+          <p style={{ padding: "0% 5%" }}>
+            Developed a Bidirectional LSTM GAN to automate mouse movements and
+            deployed the model to a production REST API using Tensorflow.js and
+            Express.
+          </p>
+        </div>
+      </div>
+      <DarkHeader text="II. Research"></DarkHeader>
       <div className="info-container-wrapper">
         <div className="info-container">
           <h1>
@@ -54,21 +87,42 @@ function App() {
           </div>
         </div>
       </div>
-      <DarkHeader text="II. Web Development"></DarkHeader>
+      <DarkHeader text="III. Web Development"></DarkHeader>
+      <div className="info-container-wrapper-single">
+        <div className="info-container" style={{ padding: "0%" }}>
+          <h1>Logos Community Church Website</h1>
+          <p style={{ padding: "0%" }}>
+            Static website with HTML and SCSS deployed using Github Pages
+          </p>
+          <VideoGIF
+            src={require("./assets/small_lcc_github_io.mp4").default}
+          ></VideoGIF>
+          <div className="two-button-grid">
+            <TextButton
+              text="Website"
+              linkHref="http://em.logosny.org"
+            ></TextButton>
+            <TextButton
+              text="Code"
+              linkHref="https://github.com/logosnyc/logosnyc.github.io"
+            ></TextButton>
+          </div>
+        </div>
+      </div>
       <div className="info-container-wrapper">
         <div className="info-container">
           <h1>MIT Hacking Medicine 2019 Submission</h1>
           <p>An App for Automatically Detecting Blast Cells</p>
           <VideoGIF src={require("./assets/hackathon.mp4").default}></VideoGIF>
           <TextButton
-            text="Website"
+            text="Code"
             linkHref="https://github.com/jchen42703/hacking_medicine_2019"
           ></TextButton>
         </div>
 
         <div className="info-container">
           <h1>QHSS Cyber</h1>
-          <p>President</p>
+          <span style={{ padding: "0%" }}>President</span>
           <p>
             Web Development Club // Hosting workshops and working on
             collaborative projects
@@ -81,7 +135,7 @@ function App() {
         </div>
       </div>
 
-      <DarkHeader text="III. Kaggle"></DarkHeader>
+      <DarkHeader text="IV. Kaggle"></DarkHeader>
       <div className="info-container-wrapper">
         <div className="info-container">
           <h1>Severstal: Steel Defect Detection Challenge</h1>
