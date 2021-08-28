@@ -98,7 +98,10 @@ function App() {
             src={require("./assets/small_lcc_github_io.mp4").default}
           ></VideoGIF>
           <div className="two-button-grid">
-            <TextButton text="Website" linkHref="em.logosny.org"></TextButton>
+            <TextButton
+              text="Website"
+              linkHref="http://em.logosny.org"
+            ></TextButton>
             <TextButton
               text="Code"
               linkHref="https://github.com/logosnyc/logosnyc.github.io"
