@@ -90,7 +90,7 @@ function App() {
 
         <div className="info-container">
           <h1>QHSS Cyber</h1>
-          <p>President</p>
+          <span style={{ padding: "0%" }}>President</span>
           <p>
             Web Development Club // Hosting workshops and working on
             collaborative projects
@@ -103,7 +103,7 @@ function App() {
         </div>
       </div>
 
-      <DarkHeader text="III. Kaggle"></DarkHeader>
+      <DarkHeader text="IV. Kaggle"></DarkHeader>
       <div className="info-container-wrapper">
         <div className="info-container">
           <h1>Severstal: Steel Defect Detection Challenge</h1>
