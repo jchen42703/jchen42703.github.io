@@ -1,4 +1,5 @@
 import { DarkHeader } from "./components/Headers";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import VideoGIF from "./components/VideoGIF";
@@ -14,7 +15,28 @@ function App() {
   return (
     <div className="full-container">
       <Hero></Hero>
-      <DarkHeader text="I. Research"></DarkHeader>
+      <DarkHeader text="I. Work Experience"></DarkHeader>
+      <div className="info-container-wrapper-col">
+        <div className="info-container">
+          <h1 style={{ padding: "5% 5% 0% 5%" }}>Rattenfanger</h1>
+          <a href=" https://twitter.com/rattenfangerio" className="fab">
+            <FontAwesomeIcon
+              icon={["fab", "twitter"]}
+              className="fontawesome"
+            />
+          </a>
+          <VideoGIF
+            src={require("./assets/ai_mouse_movements.mp4").default}
+          ></VideoGIF>
+          <span style={{ "font-weight": "600" }}>Summer 2019-2020 </span>
+          <p style={{ padding: "0% 5%" }}>
+            Developed a Bidirectional LSTM GAN to automate mouse movements and
+            deployed the model to a production REST API using Tensorflow.js and
+            Express.
+          </p>
+        </div>
+      </div>
+      <DarkHeader text="II. Research"></DarkHeader>
       <div className="info-container-wrapper">
         <div className="info-container">
           <h1>
@@ -54,7 +76,7 @@ function App() {
           </div>
         </div>
       </div>
-      <DarkHeader text="II. Web Development"></DarkHeader>
+      <DarkHeader text="III. Web Development"></DarkHeader>
       <div className="info-container-wrapper">
         <div className="info-container">
           <h1>MIT Hacking Medicine 2019 Submission</h1>
