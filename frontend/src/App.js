@@ -40,7 +40,7 @@ function App() {
             TBD.
           </p>
           <VideoGIF
-            src={require("./assets/ai_mouse_movements.mp4").default}
+            src={require("./assets/ai_mouse_movements.mp4")}
             style={{ margin: "2% 0 5% 0%" }}
           ></VideoGIF>
           <span style={{ fontWeight: "600" }}>Summer 2020 - Fall 2020 </span>
@@ -58,7 +58,7 @@ function App() {
             Capsule Networks for the Automated Segmentation of Left Atrium in
             Cardiac MRI
           </h1>
-          <VideoGIF src={require("./assets/la_003.mp4").default}></VideoGIF>
+          <VideoGIF src={require("./assets/la_003.mp4")}></VideoGIF>
           <div className="two-button-grid">
             <TextButton
               text="Code"
@@ -66,10 +66,7 @@ function App() {
             ></TextButton>
             <TextButton
               text="Paper"
-              linkHref={
-                require("./assets/pdf/Capsule_Networks_for_the_Automated_Segmentation_of_the_Left_Atrium_in_Cardiac_MRI.pdf")
-                  .default
-              }
+              linkHref={require("./assets/pdf/Capsule_Networks_for_the_Automated_Segmentation_of_the_Left_Atrium_in_Cardiac_MRI.pdf")}
             ></TextButton>
           </div>
         </div>
@@ -114,7 +111,7 @@ function App() {
             models were done with a partner using catboost and lightgbm.
           </p>
           <VideoGIF
-            src={require("./assets/small_eq_damage_forecast.mp4").default}
+            src={require("./assets/small_eq_damage_forecast.mp4")}
           ></VideoGIF>
           <div className="two-button-grid">
             <TextButton
@@ -134,7 +131,7 @@ function App() {
             Static website with HTML and SCSS deployed using Github Pages
           </p>
           <VideoGIF
-            src={require("./assets/small_lcc_github_io.mp4").default}
+            src={require("./assets/small_lcc_github_io.mp4")}
           ></VideoGIF>
           <div className="two-button-grid">
             <TextButton
@@ -153,7 +150,7 @@ function App() {
         <div className="info-container">
           <h1>MIT Hacking Medicine 2019 Submission</h1>
           <p>An App for Automatically Detecting Blast Cells</p>
-          <VideoGIF src={require("./assets/hackathon.mp4").default}></VideoGIF>
+          <VideoGIF src={require("./assets/hackathon.mp4")}></VideoGIF>
           <TextButton
             text="Code"
             linkHref="https://github.com/jchen42703/hacking_medicine_2019"
@@ -167,7 +164,7 @@ function App() {
             Web Development Club // Hosting workshops and working on
             collaborative projects
           </p>
-          <VideoGIF src={require("./assets/qhssCyber.mp4").default}></VideoGIF>
+          <VideoGIF src={require("./assets/qhssCyber.mp4")}></VideoGIF>
           <TextButton
             text="Website"
             linkHref="https://qhsscyber.github.io/"
