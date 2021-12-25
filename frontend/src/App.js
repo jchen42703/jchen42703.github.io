@@ -19,7 +19,7 @@ function App() {
       <DarkHeader text="I. Work Experience"></DarkHeader>
       <div className="info-container-wrapper-col">
         <div className="info-container">
-          <h1 style={{ padding: "5% 5% 0% 5%" }}>Rattenfanger</h1>
+          <h1 style={{ padding: "5% 5% 0% 5%" }}>Parallaxis LLC</h1>
           <a href=" https://twitter.com/rattenfangerio" className="fab">
             <FontAwesomeIcon
               icon={["fab", "twitter"]}
@@ -28,8 +28,10 @@ function App() {
           </a>
           <span style={{ fontWeight: "600" }}>August 2021 - December 2021</span>
           <p style={{ padding: "0% 5%" }}>
-            Backend developer (Go Lang and NodeJS) for Rattenfanger's bot bypass
-            REST APIs in a small team environment.
+            Built core features for Rattenfanger CLI, a Go Lang shoe bot that
+            automatically checks out high-demand, low stock shoes, with a small
+            team of developers. Reverse engineering anti-bot protection was done
+            with Charles Proxy and Insomnia.
           </p>
           <span style={{ fontWeight: "600" }}>Summer 2021</span>
           <p style={{ padding: "0% 5%" }}>
