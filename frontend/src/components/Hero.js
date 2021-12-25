@@ -10,13 +10,13 @@ const Hero = (props) => {
     <div className="hero-image">
       <div className="hero-text">
         <h1>Hi! I'm Joseph!</h1>
-        <span>Sophomore @ CWRU</span>
-        <p>Software Engineer & Deep Learning Researcher @ Rattenfanger.io</p>
+        <span>CS Sophomore @ CWRU</span>
+        <p>Fullstack Web Development & Machine Learning Enthusiast!</p>
         <div style={margins} className="two-button-grid">
           <TextButton text="Contact" linkHref="#contact"></TextButton>
           <TextButton
             text="Resume"
-            linkHref={require("../assets/pdf/resume.pdf").default}
+            linkHref={require("../assets/pdf/chen_joseph_resume.pdf").default}
           ></TextButton>
         </div>
       </div>

@@ -5,6 +5,7 @@ import Hero from "./components/Hero";
 import VideoGIF from "./components/VideoGIF";
 import TextButton from "./components/TextButton";
 import kitsCase from "./assets/label_case_00113.png";
+import gravWave from "./assets/gravitational_wave.png";
 import "./styles/styles.scss";
 
 const w80 = {
@@ -18,28 +19,31 @@ function App() {
       <DarkHeader text="I. Work Experience"></DarkHeader>
       <div className="info-container-wrapper-col">
         <div className="info-container">
-          <h1 style={{ padding: "5% 5% 0% 5%" }}>Rattenfanger</h1>
+          <h1 style={{ padding: "5% 5% 0% 5%" }}>Parallaxis LLC</h1>
           <a href=" https://twitter.com/rattenfangerio" className="fab">
             <FontAwesomeIcon
               icon={["fab", "twitter"]}
               className="fontawesome"
             />
           </a>
-          <span style={{ fontWeight: "600" }}>August 2021 - Now</span>
+          <span style={{ fontWeight: "600" }}>August 2021 - December 2021</span>
           <p style={{ padding: "0% 5%" }}>
-            Backend developer (Go Lang and NodeJS) for Rattenfanger's bot bypass
-            REST APIs in a small team environment.
+            Built core features for Rattenfanger CLI, a Go Lang shoe bot that
+            automatically checks out high-demand, low stock shoes, with a small
+            team of developers. Reverse engineering anti-bot protection was done
+            with Charles Proxy and Insomnia.
           </p>
-          <span style={{ "font-weight": "600" }}>Summer 2021</span>
+          <span style={{ fontWeight: "600" }}>Summer 2021</span>
           <p style={{ padding: "0% 5%" }}>
             Frontend development for an inventory tracking mobile app with Vue,
             Ionic and Tailwind CSS in a small team environment. Release date
             TBD.
           </p>
           <VideoGIF
-            src={require("./assets/ai_mouse_movements.mp4").default}
+            src={require("./assets/ai_mouse_movements.mp4")}
+            style={{ margin: "2% 0 5% 0%" }}
           ></VideoGIF>
-          <span style={{ "font-weight": "600" }}>Summer 2020 - Fall 2020 </span>
+          <span style={{ fontWeight: "600" }}>Summer 2020 - Fall 2020 </span>
           <p style={{ padding: "0% 5%" }}>
             Developed a Bidirectional LSTM GAN to automate mouse movements and
             deployed the model to a production REST API using Tensorflow.js and
@@ -54,7 +58,7 @@ function App() {
             Capsule Networks for the Automated Segmentation of Left Atrium in
             Cardiac MRI
           </h1>
-          <VideoGIF src={require("./assets/la_003.mp4").default}></VideoGIF>
+          <VideoGIF src={require("./assets/la_003.mp4")}></VideoGIF>
           <div className="two-button-grid">
             <TextButton
               text="Code"
@@ -62,10 +66,7 @@ function App() {
             ></TextButton>
             <TextButton
               text="Paper"
-              linkHref={
-                require("./assets/pdf/Capsule_Networks_for_the_Automated_Segmentation_of_the_Left_Atrium_in_Cardiac_MRI.pdf")
-                  .default
-              }
+              linkHref={require("./assets/pdf/Capsule_Networks_for_the_Automated_Segmentation_of_the_Left_Atrium_in_Cardiac_MRI.pdf")}
             ></TextButton>
           </div>
         </div>
@@ -87,15 +88,50 @@ function App() {
           </div>
         </div>
       </div>
+
+      <div className="info-container">
+        <h1 style={{ padding: "0% 2.5%" }}>
+          Automatically Detecting Gravitational Wave Noise
+        </h1>
+        <img src={gravWave} alt="" style={{ margin: "2% 0 5% 0%" }} />
+        <TextButton
+          text="Code"
+          linkHref="https://github.com/jchen42703/g2net_ml_dl"
+        ></TextButton>
+      </div>
+
       <DarkHeader text="III. Web Development"></DarkHeader>
-      <div className="info-container-wrapper-single">
+
+      <div className="info-container-wrapper" style={{ padding: "0%" }}>
+        <div className="info-container">
+          <h1>Automatically Forecasting Earthquake Damage</h1>
+          <p>
+            Created an app for automatically forecasting earthquake damage with
+            React and FastAPI. Deployed using Docker. The machine learning
+            models were done with a partner using catboost and lightgbm.
+          </p>
+          <VideoGIF
+            src={require("./assets/small_eq_damage_forecast.mp4")}
+          ></VideoGIF>
+          <div className="two-button-grid">
+            <TextButton
+              text="Website"
+              linkHref="https://earthquakedamageforecast.com/"
+            ></TextButton>
+            <TextButton
+              text="Code"
+              linkHref="https://github.com/jchen42703/earthquake_forecasting"
+            ></TextButton>
+          </div>
+        </div>
+
         <div className="info-container" style={{ padding: "0%" }}>
           <h1>Logos Community Church Website</h1>
           <p style={{ padding: "0%" }}>
             Static website with HTML and SCSS deployed using Github Pages
           </p>
           <VideoGIF
-            src={require("./assets/small_lcc_github_io.mp4").default}
+            src={require("./assets/small_lcc_github_io.mp4")}
           ></VideoGIF>
           <div className="two-button-grid">
             <TextButton
@@ -109,11 +145,12 @@ function App() {
           </div>
         </div>
       </div>
+
       <div className="info-container-wrapper">
         <div className="info-container">
           <h1>MIT Hacking Medicine 2019 Submission</h1>
           <p>An App for Automatically Detecting Blast Cells</p>
-          <VideoGIF src={require("./assets/hackathon.mp4").default}></VideoGIF>
+          <VideoGIF src={require("./assets/hackathon.mp4")}></VideoGIF>
           <TextButton
             text="Code"
             linkHref="https://github.com/jchen42703/hacking_medicine_2019"
@@ -127,7 +164,7 @@ function App() {
             Web Development Club // Hosting workshops and working on
             collaborative projects
           </p>
-          <VideoGIF src={require("./assets/qhssCyber.mp4").default}></VideoGIF>
+          <VideoGIF src={require("./assets/qhssCyber.mp4")}></VideoGIF>
           <TextButton
             text="Website"
             linkHref="https://qhsscyber.github.io/"
