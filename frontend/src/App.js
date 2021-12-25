@@ -93,7 +93,7 @@ function App() {
       </div>
 
       <div className="info-container">
-        <h1 style={{ padding: "0%" }}>
+        <h1 style={{ padding: "0% 2.5%" }}>
           Automatically Detecting Gravitational Wave Noise
         </h1>
         <img src={gravWave} alt="" style={{ margin: "2% 0 5% 0%" }} />
