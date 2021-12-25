@@ -5,6 +5,7 @@ import Hero from "./components/Hero";
 import VideoGIF from "./components/VideoGIF";
 import TextButton from "./components/TextButton";
 import kitsCase from "./assets/label_case_00113.png";
+import gravWave from "./assets/gravitational_wave.png";
 import "./styles/styles.scss";
 
 const w80 = {
@@ -25,12 +26,12 @@ function App() {
               className="fontawesome"
             />
           </a>
-          <span style={{ fontWeight: "600" }}>August 2021 - Now</span>
+          <span style={{ fontWeight: "600" }}>August 2021 - December 2021</span>
           <p style={{ padding: "0% 5%" }}>
             Backend developer (Go Lang and NodeJS) for Rattenfanger's bot bypass
             REST APIs in a small team environment.
           </p>
-          <span style={{ "font-weight": "600" }}>Summer 2021</span>
+          <span style={{ fontWeight: "600" }}>Summer 2021</span>
           <p style={{ padding: "0% 5%" }}>
             Frontend development for an inventory tracking mobile app with Vue,
             Ionic and Tailwind CSS in a small team environment. Release date
@@ -38,8 +39,9 @@ function App() {
           </p>
           <VideoGIF
             src={require("./assets/ai_mouse_movements.mp4").default}
+            style={{ margin: "2% 0 5% 0%" }}
           ></VideoGIF>
-          <span style={{ "font-weight": "600" }}>Summer 2020 - Fall 2020 </span>
+          <span style={{ fontWeight: "600" }}>Summer 2020 - Fall 2020 </span>
           <p style={{ padding: "0% 5%" }}>
             Developed a Bidirectional LSTM GAN to automate mouse movements and
             deployed the model to a production REST API using Tensorflow.js and
@@ -87,8 +89,43 @@ function App() {
           </div>
         </div>
       </div>
+
+      <div className="info-container">
+        <h1 style={{ padding: "0%" }}>
+          Automatically Detecting Gravitational Wave Noise
+        </h1>
+        <img src={gravWave} alt="" style={{ margin: "2% 0 5% 0%" }} />
+        <TextButton
+          text="Code"
+          linkHref="https://github.com/jchen42703/g2net_ml_dl"
+        ></TextButton>
+      </div>
+
       <DarkHeader text="III. Web Development"></DarkHeader>
-      <div className="info-container-wrapper-single">
+
+      <div className="info-container-wrapper" style={{ padding: "0%" }}>
+        <div className="info-container">
+          <h1>Automatically Forecasting Earthquake Damage</h1>
+          <p>
+            Created an app for automatically forecasting earthquake damage with
+            React and FastAPI. Deployed using Docker. The machine learning
+            models were done with a partner using catboost and lightgbm.
+          </p>
+          <VideoGIF
+            src={require("./assets/small_eq_damage_forecast.mp4").default}
+          ></VideoGIF>
+          <div className="two-button-grid">
+            <TextButton
+              text="Website"
+              linkHref="https://earthquakedamageforecast.com/"
+            ></TextButton>
+            <TextButton
+              text="Code"
+              linkHref="https://github.com/jchen42703/earthquake_forecasting"
+            ></TextButton>
+          </div>
+        </div>
+
         <div className="info-container" style={{ padding: "0%" }}>
           <h1>Logos Community Church Website</h1>
           <p style={{ padding: "0%" }}>
@@ -109,6 +146,7 @@ function App() {
           </div>
         </div>
       </div>
+
       <div className="info-container-wrapper">
         <div className="info-container">
           <h1>MIT Hacking Medicine 2019 Submission</h1>
