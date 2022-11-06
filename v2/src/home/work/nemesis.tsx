@@ -38,8 +38,7 @@ function NemesisExperience() {
 				<div className="flex flex-row">
 					<a href="https://nemesisautomation.io/">
 						[Official Website]
-					</a>
-					&nbsp;
+					</a>{" "}
 					<a
 						href="https://opensea.io/collection/nemesis-bot"
 						className="mr-2"

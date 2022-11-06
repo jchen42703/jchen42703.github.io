@@ -42,7 +42,7 @@ function AboutMe() {
 			<br />
 			<p>
 				Besides coding, I cook, work out and dance in my free time. I
-				compiled some tasy and easy recipes @&nbsp;
+				compiled some tasy and easy recipes @{" "}
 				<a
 					href="https://github.com/jchen42703/broke-college-student-recipes"
 					className="font-bold underline"
