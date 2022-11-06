@@ -3,9 +3,9 @@ $content-bot-padding: 9vh;
 $content-x-padding: 10vw;
 
 .content-container {
-	padding: $content-top-padding $content-bot-padding $content-x-padding;
+	padding: $content-top-padding $content-x-padding $content-bot-padding;
 }
 
 .content-container-no-top {
-	padding: 0 $content-bot-padding $content-x-padding;
+	padding: 0 $content-x-padding $content-bot-padding;
 }
