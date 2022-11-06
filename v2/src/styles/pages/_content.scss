@@ -1,0 +1,11 @@
+$content-top-padding: 9vw;
+$content-bot-padding: 9vh;
+$content-x-padding: 10vw;
+
+.content-container {
+	padding: $content-top-padding $content-bot-padding $content-x-padding;
+}
+
+.content-container-no-top {
+	padding: 0 $content-bot-padding $content-x-padding;
+}

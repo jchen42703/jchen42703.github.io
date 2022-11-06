@@ -33,7 +33,7 @@ function Welcome() {
 	];
 
 	return (
-		<div className="grid grid-cols-4 welcome-container gap-x-0.5">
+		<div className="grid grid-cols-4 content-container gap-x-0.5">
 			<div className="col-span-1 flex flex-col">
 				{noLinkFields.map((text) => (
 					<UppercasedText text={text} bold={true}></UppercasedText>
