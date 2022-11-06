@@ -30,14 +30,14 @@ function AboutMe() {
 			<p>
 				A little about me: I love to code in my free-time, whether that
 				be implementing new business ideas or filling in my knowledge
-				gaps! I started seriously coding in my sophomore of high school
-				to do independent original machine learning research and won
-				some awards at state competitions. I eventually got sick of the
-				never-ending parameter tuning grind and horrendous
-				reproducibility issues in ML research after 3 years. Ever since
-				then, I've been dabbling in full-stack, desktop application, and
-				CLI development. I've even been fortunate enough to be the
-				founding SWE #2 of a small, successful startup!
+				gaps! I started seriously coding in my sophomore year of high
+				school to do machine learning research and won some awards at
+				state competitions. I eventually got sick of the never-ending
+				parameter tuning grind and horrendous reproducibility issues in
+				ML research after 3 years. Ever since then, I've been dabbling
+				in full-stack, desktop application, and CLI development. I've
+				even been fortunate enough to be the founding SWE #2 of a small,
+				successful startup!
 			</p>
 			<br />
 			<p>
