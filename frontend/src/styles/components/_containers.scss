@@ -4,3 +4,12 @@
   @include w-full;
   @include h-full;
 }
+
+.horizontal-buttons {
+  @include w-full;
+  @include h-full;
+  flex: row;
+  button {
+    margin: 3% 0 3% 3%;
+  }
+}
