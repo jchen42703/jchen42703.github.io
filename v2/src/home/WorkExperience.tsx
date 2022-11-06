@@ -1,5 +1,5 @@
 import UppercasedText from "../components/text/UppercasedText";
-import BlockchainExperience from "./work/blockchain";
+import NemesisExperience from "./work/nemesis";
 
 /**
  * Work Experience Component
@@ -13,7 +13,7 @@ function WorkExperience() {
 				classes={"text-3xl"}
 			></UppercasedText>
 			<br />
-			<BlockchainExperience></BlockchainExperience>
+			<NemesisExperience></NemesisExperience>
 		</div>
 	);
 }

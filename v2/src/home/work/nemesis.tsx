@@ -3,9 +3,9 @@ import UppercasedText from "../../components/text/UppercasedText";
 import nemesisBanner from "../../assets/nemesis.jpg";
 
 /**
- * BlockchainExperience Component
+ * NemesisExperience Component
  */
-function BlockchainExperience() {
+function NemesisExperience() {
 	return (
 		<div id="nemesis" className="grid grid-cols-4 mt-8">
 			{/* Description with Timeline */}
@@ -145,4 +145,4 @@ function BlockchainExperience() {
 	);
 }
 
-export default BlockchainExperience;
+export default NemesisExperience;
