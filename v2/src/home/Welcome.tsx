@@ -27,8 +27,12 @@ function Welcome() {
 			href: "#nemesis",
 		},
 		{
-			title: "<Parallaxis LLC />",
-			href: "#parallaxis",
+			title: "<Parallaxis LLC (SWE) />",
+			href: "#parallaxis-swe",
+		},
+		{
+			title: "<Parallaxis LLC (ML) />",
+			href: "#parallaxis-ml",
 		},
 		{
 			title: "<Machine Learning Research />",

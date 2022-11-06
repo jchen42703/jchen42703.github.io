@@ -1,5 +1,7 @@
 import UppercasedText from "../components/text/UppercasedText";
 import NemesisExperience from "./work/nemesis";
+import Parallaxis2020Experience from "./work/parallaxis2020";
+import Parallaxis2021Experience from "./work/parallaxis2021";
 
 /**
  * Work Experience Component
@@ -14,6 +16,8 @@ function WorkExperience() {
 			></UppercasedText>
 			<br />
 			<NemesisExperience></NemesisExperience>
+			<Parallaxis2021Experience></Parallaxis2021Experience>
+			<Parallaxis2020Experience></Parallaxis2020Experience>
 		</div>
 	);
 }
