@@ -12,6 +12,10 @@ function Welcome() {
 			href: "#aboutme",
 		},
 		{
+			title: "<Resume />",
+			href: "https://github.com/jchen42703/resumes/blob/main/latest_generic.pdf",
+		},
+		{
 			title: "<Contact Me />",
 			href: "#contact",
 		},
