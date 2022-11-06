@@ -23,15 +23,15 @@ function Welcome() {
 
 	const workFields = [
 		{
-			title: "<Blockchain />",
-			href: "#blockchain",
+			title: "<Nemesis />",
+			href: "#nemesis",
 		},
 		{
-			title: "<Automation & Reverse Engineering />",
-			href: "#automation",
+			title: "<Parallaxis LLC />",
+			href: "#parallaxis",
 		},
 		{
-			title: "<Machine Learning />",
+			title: "<Machine Learning Research />",
 			href: "#machinelearning",
 		},
 	];
@@ -56,7 +56,10 @@ function Welcome() {
 				))}
 				<br></br>
 
-				<UppercasedText text={"My Work"} bold={true}></UppercasedText>
+				<UppercasedText
+					text={"Work & Research"}
+					bold={true}
+				></UppercasedText>
 				<br></br>
 				{workFields.map(({ title, href }) => (
 					<UppercasedText
