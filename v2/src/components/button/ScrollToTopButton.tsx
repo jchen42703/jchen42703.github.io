@@ -1,46 +1,50 @@
 import { AnimatePresence, motion } from "framer-motion";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { BsCaretUpSquareFill } from "react-icons/bs";
 
 const ScrollButton = () => {
-	const [visible, setVisible] = useState(false);
+	const [scrollPosition, setScrollPosition] = useState(0);
 
-	const toggleVisible = () => {
-		const scrolled = document.documentElement.scrollTop;
-		if (scrolled > 300) {
-			setVisible(true);
-		} else if (scrolled <= 300) {
-			setVisible(false);
-		}
-	};
+	const displayAfterPx = 150;
+	useEffect(() => {
+		const updatePosition = () => {
+			setScrollPosition(window.pageYOffset);
+		};
 
-	const scrollToTop = () => {
+		window.addEventListener("scroll", updatePosition);
+
+		// Cleanup
+		return () => window.removeEventListener("scroll", updatePosition);
+	}, []);
+
+	const scrollToTop: React.MouseEventHandler<SVGElement> = (e) => {
 		window.scrollTo({
 			top: 0,
 			behavior: "smooth",
-			/* you can also use 'auto' behaviour
-         in place of 'smooth' */
 		});
 	};
 
-	window.addEventListener("scroll", toggleVisible);
-
+	// Animation from: https://www.devforce.one/11765467/scroll-to-top-button-with-react-framer-motion#/
 	return (
 		<AnimatePresence>
-			{visible && (
-				<motion.div
-					initial={{ opacity: 0 }}
-					animate={{ opacity: 1 }}
-					exit={{ opacity: 0 }}
-					transition={{ ease: "easeOut", duration: 0.5 }}
+			{scrollPosition > displayAfterPx && (
+				<motion.button
+					initial={{ y: 100, opacity: 0 }}
+					animate={{
+						y: 0,
+						opacity: 1,
+						transition: { duration: 0.6 },
+					}}
+					exit={{ y: 100, opacity: 0, transition: { duration: 0.6 } }}
+					whileHover={{
+						scale: 1.2,
+						transition: { duration: 0.2 },
+					}}
+					whileTap={{ scale: 1 }}
+					className="scroll-to-top-btn"
 				>
-					<div className="scroll-to-top-btn">
-						<BsCaretUpSquareFill
-							onClick={scrollToTop}
-							// style={{ display: visible ? "inline" : "none" }}
-						/>
-					</div>
-				</motion.div>
+					<BsCaretUpSquareFill onClick={scrollToTop} />
+				</motion.button>
 			)}
 		</AnimatePresence>
 	);
