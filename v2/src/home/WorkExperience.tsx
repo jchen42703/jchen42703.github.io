@@ -9,7 +9,7 @@ import SlideIntoViewAnimation from "../components/animations/SlideIntoView";
  */
 function WorkExperience() {
 	return (
-		<div id="aboutme" className="content-container-no-top">
+		<div id="workexp" className="content-container-no-top">
 			<UppercasedText
 				text={"Work & Research"}
 				bold={true}
