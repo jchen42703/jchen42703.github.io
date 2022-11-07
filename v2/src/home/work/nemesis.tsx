@@ -93,8 +93,38 @@ function NemesisExperience() {
 					<li>Reverse Engineering: Charles Proxy, Insomnia</li>
 					<li>Misc. APIs: Go, Typescript, Express</li>
 				</ul>
+
 				<UppercasedText
-					text={"The Story"}
+					text={"Specific Tech Problems Solved Not On My Resume"}
+					bold={true}
+					classes={"text-1xl inline-block mt-2"}
+				></UppercasedText>
+				<br />
+				<ul className="list-items mt-2">
+					<li>
+						Custom home-grown HTTP library could not be unit-tested,
+						so I built a CLI to make end-to-end testing common
+						request flows seamless.
+					</li>
+					<li>
+						Architected the core framework to allow for
+						runnable/cancellable minting/sniping tasks across
+						multiple blockchains in Javascript/Typescript without
+						Bluebird.
+					</li>
+					<li>
+						Built the majority of the Solana NFT minting and sniping
+						code from the ground-up.
+					</li>
+					<li>
+						Used list virtualization (and amended an existing Svelte
+						virtualization library) and incremental task starts to
+						increase the max number of tasks that could be
+						concurrently run from ~80-100 to over 300.
+					</li>
+				</ul>
+				<UppercasedText
+					text={"Story Time"}
 					bold={true}
 					classes={"text-1xl inline-block mt-2"}
 				></UppercasedText>
