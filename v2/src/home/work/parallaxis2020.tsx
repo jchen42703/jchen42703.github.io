@@ -30,19 +30,23 @@ function Parallaxis2020Experience() {
 				<br />
 				<div className="mt-2">
 					<p className="italic">
-						TLDR: Joined a blockchain startup after they gained
-						initial seed funding from users with a prototype and
-						helped lead the rewrite, which massively grew the
-						userbase and sales. Left due to burnout and money
-						issues.
+						TLDR: Business was booming, and the CEO brought me
+						onboard to automate mouse movements for one of the APIs
+						they were building and planning to monetize. Built a GAN
+						to automate mouse movements, but it was too costly to
+						run at the scale that the company needed. Ended up
+						implementing and using a normal algorithimic Go mouse
+						movement library with generated noise and preconfigured
+						route "shapes." Learned a lot of hard lessons during
+						this internship.
 					</p>
 				</div>
 				<UppercasedText
-					text={"The Story"}
+					text={"Story Time"}
 					bold={true}
 					classes={"text-1xl inline-block mt-2"}
 				></UppercasedText>
-				<div className="mt-2"></div>
+				<div className="mt-2">WIP</div>
 			</div>
 		</div>
 	);
