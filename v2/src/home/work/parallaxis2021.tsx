@@ -29,19 +29,18 @@ function Parallaxis2021Experience() {
 				></UppercasedText>
 				<div className="mt-2">
 					<p className="italic">
-						TLDR: Joined a blockchain startup after they gained
-						initial seed funding from users with a prototype and
-						helped lead the rewrite, which massively grew the
-						userbase and sales. Left due to burnout and money
-						issues.
+						TLDR: Initially, worked on a shoe inventory tracking
+						app, but was moved to the core automation software
+						development due to developers leaving. Business
+						eventually went under (╥_╥).
 					</p>
 				</div>
 				<UppercasedText
-					text={"The Story"}
+					text={"Story Time"}
 					bold={true}
 					classes={"text-1xl inline-block mt-2"}
 				></UppercasedText>
-				<div className="mt-2"></div>
+				<div className="mt-2">WIP</div>
 			</div>
 		</div>
 	);
