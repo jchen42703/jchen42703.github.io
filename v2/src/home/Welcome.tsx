@@ -38,6 +38,10 @@ function Welcome() {
 			title: "<Machine Learning Research />",
 			href: "#machinelearning",
 		},
+		{
+			title: "<Applied ML (Hobby) />",
+			href: "#projects-mlops",
+		},
 	];
 
 	return (
