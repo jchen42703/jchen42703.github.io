@@ -6,9 +6,20 @@
 	font-family: ArchivGrotesk;
 	src: url("../public/fonts/ArchivGroteskTrial-RegularTrial.otf");
 }
+
+@font-face {
+	font-family: AileronRegular;
+	src: url("../public/fonts/Aileron/Aileron-Regular.otf");
+}
+
+@font-face {
+	font-family: ApercuRegular;
+	src: url("../public/fonts/Apercu-Font/Apercu\ Regular.otf");
+}
+
 body {
 	margin: 0;
-	font-family: ArchivGrotesk, sans-serif;
+	font-family: ApercuRegular, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
