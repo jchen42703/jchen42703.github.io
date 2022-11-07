@@ -76,6 +76,23 @@ function NemesisExperience() {
 						issues.
 					</p>
 				</div>
+
+				<UppercasedText
+					text={"Tech Stack"}
+					bold={true}
+					classes={"text-1xl inline-block mt-2"}
+				></UppercasedText>
+				<br />
+				<ul className="list-items mt-2">
+					<li>
+						Nemesis v1:
+						Javascript/Typescript/Svelte/Tailwind/Electron
+						(web3.js/ethers.js)
+					</li>
+					<li>DevOps: GitHub Actions, Lerna, Verdaccio</li>
+					<li>Reverse Engineering: Charles Proxy, Insomnia</li>
+					<li>Misc. APIs: Go, Typescript, Express</li>
+				</ul>
 				<UppercasedText
 					text={"The Story"}
 					bold={true}
