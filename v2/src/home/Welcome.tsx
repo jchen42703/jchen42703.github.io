@@ -48,7 +48,11 @@ function Welcome() {
 		<div className="grid grid-cols-4 content-container gap-x-0.5">
 			<div className="col-span-1 flex flex-col">
 				{noLinkFields.map((text) => (
-					<UppercasedText text={text} bold={true}></UppercasedText>
+					<UppercasedText
+						key={text}
+						text={text}
+						bold={true}
+					></UppercasedText>
 				))}
 			</div>
 
@@ -57,6 +61,7 @@ function Welcome() {
 				<br></br>
 				{regLinkFields.map(({ title, href }) => (
 					<UppercasedText
+						key={title}
 						text={title}
 						href={href}
 						bold={true}
@@ -71,6 +76,7 @@ function Welcome() {
 				<br></br>
 				{workFields.map(({ title, href }) => (
 					<UppercasedText
+						key={title}
 						text={title}
 						href={href}
 						bold={true}
@@ -81,6 +87,7 @@ function Welcome() {
 			<div className="col-span-2 flex flex-col text-right">
 				{["Undergrad", "&", "(Ex) Founding SWE"].map((text) => (
 					<UppercasedText
+						key={text}
 						text={text}
 						bold={true}
 						classes={"text-6xl"}
