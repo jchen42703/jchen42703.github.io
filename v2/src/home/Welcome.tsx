@@ -27,11 +27,11 @@ function Welcome() {
 			href: "#nemesis",
 		},
 		{
-			title: "<Parallaxis LLC (SWE) />",
+			title: "<Parallaxis (SWE) />",
 			href: "#parallaxis-swe",
 		},
 		{
-			title: "<Parallaxis LLC (ML) />",
+			title: "<Parallaxis (ML) />",
 			href: "#parallaxis-ml",
 		},
 		{
