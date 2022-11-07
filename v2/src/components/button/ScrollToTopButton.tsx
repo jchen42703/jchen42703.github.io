@@ -1,4 +1,5 @@
 import { AnimatePresence, motion } from "framer-motion";
+import { MouseEventHandler } from "react";
 import { useState, useEffect } from "react";
 import { BsCaretUpSquareFill } from "react-icons/bs";
 
@@ -17,7 +18,7 @@ const ScrollButton = () => {
 		return () => window.removeEventListener("scroll", updatePosition);
 	}, []);
 
-	const scrollToTop: React.MouseEventHandler<SVGElement> = (e) => {
+	const scrollToTop: MouseEventHandler<HTMLButtonElement> = (e) => {
 		window.scrollTo({
 			top: 0,
 			behavior: "smooth",
@@ -29,6 +30,7 @@ const ScrollButton = () => {
 		<AnimatePresence>
 			{scrollPosition > displayAfterPx && (
 				<motion.button
+					onClick={scrollToTop}
 					initial={{ y: 100, opacity: 0 }}
 					animate={{
 						y: 0,
@@ -43,7 +45,7 @@ const ScrollButton = () => {
 					whileTap={{ scale: 1 }}
 					className="scroll-to-top-btn"
 				>
-					<BsCaretUpSquareFill onClick={scrollToTop} />
+					<BsCaretUpSquareFill />
 				</motion.button>
 			)}
 		</AnimatePresence>
