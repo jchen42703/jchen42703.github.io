@@ -69,7 +69,11 @@ function UppercasedText({
 			</a>
 		);
 	}
-	return <span className={className}>{text}</span>;
+	return (
+		<span className={className} onClick={onClick}>
+			{text}
+		</span>
+	);
 }
 
 export default UppercasedText;
