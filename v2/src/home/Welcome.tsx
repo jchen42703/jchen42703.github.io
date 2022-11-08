@@ -15,7 +15,6 @@ function Welcome() {
 
 	// Responsively renders the top components (basic info + nav menu)
 	const renderTop = () => {
-		console.log("is mobile: ", isMobile);
 		if (isMobile) {
 			return (
 				<div className="flex flex-row justify-between">
@@ -54,7 +53,7 @@ function Welcome() {
 		<div className="flex flex-col md:grid md:grid-cols-4 content-container gap-x-0.75">
 			{renderTop()}
 
-			<div className="flex flex-col text-left md:col-span-2 md:text-right">
+			<div className="flex flex-col text-left mt-4 md:mt-0 md:col-span-2 md:text-right">
 				{["Undergrad", "&", "(Ex) Founding SWE"].map((text) => (
 					<UppercasedText
 						key={text}
