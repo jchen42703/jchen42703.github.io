@@ -1,49 +1,17 @@
+import { useCycle } from "framer-motion";
 import UppercasedText from "../../components/text/UppercasedText";
+import MobileDrawer from "./MobileDrawer";
+import { regLinkFields, workFields } from "./navFields";
 
 function NavigationMenu({ isMobile }: { isMobile: boolean }) {
-	const regLinkFields = [
-		{
-			title: "<About Me />",
-			href: "#aboutme",
-		},
-		{
-			title: "<Resume />",
-			href: "https://github.com/jchen42703/resumes/blob/main/latest_generic.pdf",
-		},
-		{
-			title: "<Contact Me />",
-			href: "#contact",
-		},
-	];
+	const [dispMobileMenu, cycleMenuOpen] = useCycle(false, true);
 
-	const workFields = [
-		{
-			title: "<Nemesis />",
-			href: "#nemesis",
-		},
-		{
-			title: "<Parallaxis (SWE) />",
-			href: "#parallaxis-swe",
-		},
-		{
-			title: "<Parallaxis (ML) />",
-			href: "#parallaxis-ml",
-		},
-		{
-			title: "<Machine Learning Research />",
-			href: "#machinelearning",
-		},
-		{
-			title: "<Applied ML (Hobby) />",
-			href: "#projects-mlops",
-		},
-	];
+	const toggleMobileMenu = () => {
+		cycleMenuOpen();
+		// console.log("toggle");
+	};
 
-	const renderMenuLinks = () => {
-		if (isMobile) {
-			return;
-		}
-
+	const renderLinksOnly = () => {
 		return (
 			<>
 				{regLinkFields.map(({ title, href }) => (
@@ -75,17 +43,36 @@ function NavigationMenu({ isMobile }: { isMobile: boolean }) {
 			</>
 		);
 	};
+
+	// Handles rendering based on media queries
+	const renderMenuLinksConditionally = () => {
+		if (isMobile) {
+			// Full Screen Mobile Menu
+			return (
+				<MobileDrawer
+					isOpen={dispMobileMenu}
+					toggleOpen={cycleMenuOpen}
+				>
+					{renderLinksOnly()}
+				</MobileDrawer>
+			);
+		}
+
+		return <>{renderLinksOnly()}</>;
+	};
+
 	return (
 		<div className="col-span-1 flex flex-col">
 			<UppercasedText
 				text={"Menu"}
 				bold={true}
 				classes="underline md:no-underline text-lg"
+				onClick={isMobile ? toggleMobileMenu : undefined}
 			></UppercasedText>
 			{/* Render different drop down if mobile */}
 			{/* Render the original menu if bigger than mobile size */}
 			<br></br>
-			{renderMenuLinks()}
+			{renderMenuLinksConditionally()}
 		</div>
 	);
 }
