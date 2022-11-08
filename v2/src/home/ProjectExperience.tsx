@@ -6,13 +6,13 @@ import SlideIntoViewAnimation from "../components/animations/SlideIntoView";
 import HSSeniorYearResearch from "./research/HSSeniorYearResearch";
 
 /**
- * Work Experience Component
+ * ProjectExperience Component
  */
-function WorkExperience() {
+function ProjectExperience() {
 	return (
-		<div id="workexp" className="content-container-no-top">
+		<div id="projects-mlops" className="content-container-no-top">
 			<UppercasedText
-				text={"Work & Research"}
+				text={"Applied ML (Hobby)"}
 				bold={true}
 				classes={"text-3xl"}
 			></UppercasedText>
@@ -32,4 +32,4 @@ function WorkExperience() {
 	);
 }
 
-export default WorkExperience;
+export default ProjectExperience;

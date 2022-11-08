@@ -6,6 +6,8 @@ import { fab } from "@fortawesome/free-brands-svg-icons";
 import "./styles/styles.scss";
 import ScrollButton from "./components/button/ScrollToTopButton";
 import ScrollProgressBar from "./components/animations/ScrollProgressBar";
+import ProjectExperience from "./home/ProjectExperience";
+import Footer from "./components/footer";
 
 library.add(fab);
 
@@ -16,6 +18,8 @@ function App() {
 			<Welcome></Welcome>
 			<AboutMe></AboutMe>
 			<WorkExperience></WorkExperience>
+			<ProjectExperience></ProjectExperience>
+			<Footer></Footer>
 			<ScrollButton></ScrollButton>
 		</>
 	);
