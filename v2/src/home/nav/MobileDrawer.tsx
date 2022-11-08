@@ -30,7 +30,7 @@ function MobileDrawer({
 								bounce: 0,
 								duration: 0.4,
 							}}
-							className="fixed nav-drawer shadow-lg top-0 right-0 w-full max-w-sm h-screen p-5"
+							className="fixed nav-drawer shadow-lg top-0 right-0 w-full max-w-sm h-screen pt-5 px-10"
 						>
 							<button
 								onClick={() => toggleOpen()}
