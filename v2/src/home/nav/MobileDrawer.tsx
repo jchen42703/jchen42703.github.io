@@ -1,5 +1,8 @@
 import { AnimatePresence, Cycle, motion } from "framer-motion";
 
+/**
+ * From: https://codesandbox.io/s/framer-motion-tutorial-rf6j2?file=/src/App.js
+ */
 function MobileDrawer({
 	isOpen = false,
 	toggleOpen,
@@ -27,11 +30,11 @@ function MobileDrawer({
 								bounce: 0,
 								duration: 0.4,
 							}}
-							className="fixed bg-indigo-600 text-white shadow-lg top-0 right-0 w-full max-w-sm h-screen p-5"
+							className="fixed nav-drawer shadow-lg top-0 right-0 w-full max-w-sm h-screen p-5"
 						>
 							<button
 								onClick={() => toggleOpen()}
-								className="bg-white text-black h-8 w-8 block mb-2 rounded-full"
+								className="bg-white text-black h-8 w-8 block mb-2 rounded-full ml-auto"
 							>
 								&times;
 							</button>

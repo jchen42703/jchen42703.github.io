@@ -53,7 +53,7 @@ function NavigationMenu({ isMobile }: { isMobile: boolean }) {
 					isOpen={dispMobileMenu}
 					toggleOpen={cycleMenuOpen}
 				>
-					{renderLinksOnly()}
+					<div className="flex flex-col">{renderLinksOnly()}</div>
 				</MobileDrawer>
 			);
 		}
