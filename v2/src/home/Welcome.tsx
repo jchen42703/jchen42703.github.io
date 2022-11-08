@@ -45,19 +45,24 @@ function Welcome() {
 	];
 
 	return (
-		<div className="grid grid-cols-4 content-container gap-x-0.5">
+		<div className="grid grid-cols-4 content-container gap-x-0.75">
 			<div className="col-span-1 flex flex-col">
 				{noLinkFields.map((text) => (
 					<UppercasedText
 						key={text}
 						text={text}
 						bold={true}
+						classes="text-lg"
 					></UppercasedText>
 				))}
 			</div>
 
 			<div className="col-span-1 flex flex-col">
-				<UppercasedText text={"Menu"} bold={true}></UppercasedText>
+				<UppercasedText
+					text={"Menu"}
+					bold={true}
+					classes="text-lg"
+				></UppercasedText>
 				<br></br>
 				{regLinkFields.map(({ title, href }) => (
 					<UppercasedText
@@ -65,6 +70,7 @@ function Welcome() {
 						text={title}
 						href={href}
 						bold={true}
+						classes="text-lg"
 					></UppercasedText>
 				))}
 				<br></br>
@@ -72,6 +78,7 @@ function Welcome() {
 				<UppercasedText
 					text={"Work & Research"}
 					bold={true}
+					classes="text-lg"
 				></UppercasedText>
 				<br></br>
 				{workFields.map(({ title, href }) => (
@@ -80,6 +87,7 @@ function Welcome() {
 						text={title}
 						href={href}
 						bold={true}
+						classes="text-lg"
 					></UppercasedText>
 				))}
 			</div>
@@ -90,7 +98,7 @@ function Welcome() {
 						key={text}
 						text={text}
 						bold={true}
-						classes={"text-6xl"}
+						classes="text-7xl"
 					></UppercasedText>
 				))}
 			</div>
