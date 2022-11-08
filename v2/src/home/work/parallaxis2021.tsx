@@ -31,8 +31,12 @@ function Parallaxis2021Experience() {
 					<p className="italic">
 						TLDR: Initially, worked on a shoe inventory tracking
 						app, but was moved to the core automation software
-						development due to developers leaving. Business
-						eventually went under (╥_╥).
+						development due to developers leaving. This is where I
+						got good at Go and web reverse engineering. Learned a
+						lot about how modern anti-bot practices work and Fastly
+						caching. Buutttt business eventually went under due
+						being unable to get enough traction when the product was
+						done (╥_╥).
 					</p>
 				</div>
 				<UppercasedText
