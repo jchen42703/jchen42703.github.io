@@ -31,7 +31,7 @@ function MobileDrawer({
 								duration: 0.2,
 							}}
 							onClick={() => toggleOpen()}
-							className="bg-[#404040] px-5 fixed h-full w-full flex items-center justify-center top-0 left-0"
+							className="z-10 bg-[#404040] px-5 fixed h-full w-full flex items-center justify-center top-0 left-0"
 						/>
 						<motion.div
 							initial={{ x: "100%" }}
@@ -46,7 +46,7 @@ function MobileDrawer({
 								bounce: 0,
 								duration: 0.4,
 							}}
-							className="fixed nav-drawer shadow-lg top-0 right-0 w-full max-w-sm h-screen pt-5 px-10"
+							className="z-10 fixed nav-drawer shadow-lg top-0 right-0 w-full max-w-sm h-screen pt-5 px-10"
 						>
 							<button
 								onClick={() => toggleOpen()}
