@@ -1,6 +1,6 @@
-import UppercasedText from "../components/text/UppercasedText";
+import UppercasedText from "../../components/text/UppercasedText";
 
-function NavigationMenu() {
+function NavigationMenu({ isMobile }: { isMobile: boolean }) {
 	const regLinkFields = [
 		{
 			title: "<About Me />",
@@ -41,10 +41,12 @@ function NavigationMenu() {
 
 	return (
 		<div className="col-span-1 flex flex-col">
+			{/* Render different drop down if mobile */}
+			{/* Render the original menu if bigger than mobile size */}
 			<UppercasedText
 				text={"Menu"}
 				bold={true}
-				classes="text-lg"
+				classes="underline md:no-underline text-lg"
 			></UppercasedText>
 			<br></br>
 			{regLinkFields.map(({ title, href }) => (
