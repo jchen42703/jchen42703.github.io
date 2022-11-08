@@ -229,58 +229,55 @@ function NemesisExperience() {
 						experience being so successful, while being under so
 						much pressure and time crunch. Nevertheless, I learned
 						some key lessons that I will also never forget.
-						<ul>
-							<li>
-								<b>
-									Don't be scared to ask for help when you
-									need it. Seriously.
-								</b>{" "}
-								It sounds like common sense, but I was
-								struggling a lot when I first joined. I had very
-								limited experience in blockchain dapp
-								development, no experience in desktop
-								application development, and was tasked with a
-								mountain of responsibility. I was also going to
-								school full-time and taking some graduate level
-								courses. As a result, it dramatically delayed
-								our release (nearly a month delay). Initially,
-								when I asked for help, I never really had a good
-								understanding of what the other person said
-								until weeks later. I could have dramatically
-								sped up my learning process if I did more pair
-								programming with Wang (the one who wrote the
-								prototype) and took better notes. Although we
-								still released in time to be wildly successful
-								for Okay Bears (the start of "Solana Summer"),
-								we still missed the best timing for automatic
-								Ethereum minting and sniping and a month of
-								revenue when ETH was high (3k+). This is a
-								lesson I won't forget.
-							</li>
-							<li>
-								<b>Don't get greedy with pricing.</b> Okay, this
-								one wasn't necessarily anyone's fault.
-								Initially, we priced the bot very high in-line
-								with when ETH minting was very hot. However,
-								most competitors were reducing prices due to
-								foreseeing the drop in crypto prices. We didn't
-								follow the trend. As a result, it greatly
-								hindered our initial growth. Although, we were
-								able to secure 100+ users paying an initial fee
-								of approximately $2500, we could have garnered a
-								much larger userbase if we priced everything
-								lower (near $1200). This lesson sounds like
-								common sense, but{" "}
-								<b>
-									once the prices were set, we couldn't lower
-									them anymore with a good conscience.
-								</b>{" "}
-								Otherwise, it would have been unfair to those
-								who initially bought our product when it was
-								priced high.
-							</li>
-						</ul>
 					</p>
+					<ul>
+						<li>
+							<b>
+								Don't be scared to ask for help when you need
+								it. Seriously.
+							</b>{" "}
+							It sounds like common sense, but I was struggling a
+							lot when I first joined. I had very limited
+							experience in blockchain dapp development, no
+							experience in desktop application development, and
+							was tasked with a mountain of responsibility. I was
+							also going to school full-time and taking some
+							graduate level courses. As a result, it dramatically
+							delayed our release (nearly a month delay).
+							Initially, when I asked for help, I never really had
+							a good understanding of what the other person said
+							until weeks later. I could have dramatically sped up
+							my learning process if I did more pair programming
+							with Wang (the one who wrote the prototype) and took
+							better notes. Although we still released in time to
+							be wildly successful for Okay Bears (the start of
+							"Solana Summer"), we still missed the best timing
+							for automatic Ethereum minting and sniping and a
+							month of revenue when ETH was high (3k+). This is a
+							lesson I won't forget.
+						</li>
+						<li>
+							<b>Don't get greedy with pricing.</b> Okay, this one
+							wasn't necessarily anyone's fault. Initially, we
+							priced the bot very high in-line with when ETH
+							minting was very hot. However, most competitors were
+							reducing prices due to foreseeing the drop in crypto
+							prices. We didn't follow the trend. As a result, it
+							greatly hindered our initial growth. Although, we
+							were able to secure 100+ users paying an initial fee
+							of approximately $2500, we could have garnered a
+							much larger userbase if we priced everything lower
+							(near $1200). This lesson sounds like common sense,
+							but{" "}
+							<b>
+								once the prices were set, we couldn't lower them
+								anymore with a good conscience.
+							</b>{" "}
+							Otherwise, it would have been unfair to those who
+							initially bought our product when it was priced
+							high.
+						</li>
+					</ul>
 				</div>
 			</div>
 		</div>
