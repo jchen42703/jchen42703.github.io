@@ -30,7 +30,7 @@ function NemesisExperience() {
 				></UppercasedText>
 				<br />
 				<UppercasedText
-					text={"Founding SWE #2"}
+					text={"Founding SWE #3"}
 					bold={true}
 					classes={"text-1xl"}
 				></UppercasedText>
@@ -105,28 +105,27 @@ function NemesisExperience() {
 				<ul className="list-items mt-2">
 					<li>
 						Custom home-grown HTTP library could not be unit-tested,
-						so I built a CLI to make end-to-end testing common
-						request flows seamless.
+						so I built a CLI in Typescript to make end-to-end
+						testing common request flows seamless.
 					</li>
 					<li>
-						Architected the core framework to allow for
+						Architected the core JS/TS framework that made creating
 						runnable/cancellable minting/sniping tasks across
-						multiple blockchains in Javascript/Typescript without
-						Bluebird.
+						multiple blockchains easy.
 					</li>
 					<li>
 						Built the majority of the Solana NFT minting and sniping
 						code from the ground-up.
 					</li>
 					<li>
-						Used list virtualization (and amended an existing Svelte
-						virtualization library) and incremental task starts to
+						Amended and integrated an existing Svelte list
+						virtualization library and incremental task starts to
 						increase the max number of tasks that could be
-						concurrently run from ~80-100 to over 300.
+						concurrently run from ~50-60 to over 300.
 					</li>
 				</ul>
 				<UppercasedText
-					text={"Story Time"}
+					text={"The Start"}
 					bold={true}
 					classes={"text-1xl inline-block mt-2"}
 				></UppercasedText>
@@ -186,6 +185,101 @@ function NemesisExperience() {
 						alchemist's great marketing endeavors, we were able to{" "}
 						<b>double our userbase</b> over the 3-4 months after our
 						v1 release!
+					</p>
+
+					<br />
+					<UppercasedText
+						text={"The End?"}
+						bold={true}
+						classes={"text-1xl inline-block mt-2"}
+					></UppercasedText>
+					<p>
+						Unfortunately, crypto started crashing hard near
+						June-July 2022. Our revenue was in ETH, so when ETH
+						fell, our monthly revenue also tanked over 60%. As a
+						result, alchemist and I decided to take steps back to
+						allow the other two SWEs, Wang and Rimas, to take most
+						of the income because they actually needed the money. It
+						was also partially because we were burnt out from the
+						rewrite sprint and the following months maintaining the
+						application. Also, Nemesis v1 didn't need much
+						maintenance anymore. That meant that alchemist and I
+						could take steps back without having to worry about the
+						main product.
+					</p>
+					<br />
+					<p>
+						Alchemist actually ended up diving back into Nemesis in
+						Fall 2022 and is expanding the brand. On the other hand,
+						I now applying and actively looking for internship and
+						job opportunities to grow my skillset in machine
+						learning and/or working with applications at scale!
+					</p>
+
+					<br />
+					<UppercasedText
+						text={"Lessons Learned"}
+						bold={true}
+						classes={"text-1xl inline-block mt-2"}
+					></UppercasedText>
+					<br />
+					<p>
+						This experience was an amazing (spontaneous)
+						opportunity. It was an absolutely unforgettable
+						experience being so successful, while being under so
+						much pressure and time crunch. Nevertheless, I learned
+						some key lessons that I will also never forget.
+						<ul>
+							<li>
+								<b>
+									Don't be scared to ask for help when you
+									need it. Seriously.
+								</b>{" "}
+								It sounds like common sense, but I was
+								struggling a lot when I first joined. I had very
+								limited experience in blockchain dapp
+								development, no experience in desktop
+								application development, and was tasked with a
+								mountain of responsibility. I was also going to
+								school full-time and taking some graduate level
+								courses. As a result, it dramatically delayed
+								our release (nearly a month delay). Initially,
+								when I asked for help, I never really had a good
+								understanding of what the other person said
+								until weeks later. I could have dramatically
+								sped up my learning process if I did more pair
+								programming with Wang (the one who wrote the
+								prototype) and took better notes. Although we
+								still released in time to be wildly successful
+								for Okay Bears (the start of "Solana Summer"),
+								we still missed the best timing for automatic
+								Ethereum minting and sniping and a month of
+								revenue when ETH was high (3k+). This is a
+								lesson I won't forget.
+							</li>
+							<li>
+								<b>Don't get greedy with pricing.</b> Okay, this
+								one wasn't necessarily anyone's fault.
+								Initially, we priced the bot very high in-line
+								with when ETH minting was very hot. However,
+								most competitors were reducing prices due to
+								foreseeing the drop in crypto prices. We didn't
+								follow the trend. As a result, it greatly
+								hindered our initial growth. Although, we were
+								able to secure 100+ users paying an initial fee
+								of approximately $2500, we could have garnered a
+								much larger userbase if we priced everything
+								lower (near $1200). This lesson sounds like
+								common sense, but{" "}
+								<b>
+									once the prices were set, we couldn't lower
+									them anymore with a good conscience.
+								</b>{" "}
+								Otherwise, it would have been unfair to those
+								who initially bought our product when it was
+								priced high.
+							</li>
+						</ul>
 					</p>
 				</div>
 			</div>
