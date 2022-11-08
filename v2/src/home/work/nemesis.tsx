@@ -69,11 +69,13 @@ function NemesisExperience() {
 
 				<div className="mt-2">
 					<p className="italic">
-						TLDR: Joined a blockchain startup after they gained
-						initial seed funding from users with a prototype and
-						helped lead the rewrite, which massively grew the
-						userbase and sales. Left due to burnout and money
-						issues.
+						TLDR: While going to school full-time, I joined a
+						blockchain startup after they gained initial seed
+						funding from users with a prototype and lead the rewrite
+						for the official release, which massively grew the
+						userbase and sales. Learned tons about building desktop
+						applications, Svelte, and of course, blockchain! Left
+						due to burnout.
 					</p>
 				</div>
 
