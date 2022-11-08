@@ -2,6 +2,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { MouseEventHandler } from "react";
 import { useState, useEffect } from "react";
 import { BsCaretUpSquareFill } from "react-icons/bs";
+import { animateScroll } from "react-scroll";
 
 const ScrollButton = () => {
 	const [scrollPosition, setScrollPosition] = useState(0);
@@ -18,10 +19,16 @@ const ScrollButton = () => {
 		return () => window.removeEventListener("scroll", updatePosition);
 	}, []);
 
-	const scrollToTop: MouseEventHandler<HTMLButtonElement> = (e) => {
-		window.scrollTo({
-			top: 0,
-			behavior: "smooth",
+	const scrollToTop: MouseEventHandler<HTMLButtonElement> = () => {
+		// For some reason, this is very inconsistent:
+		// window.scrollTo({
+		// 	top: 0,
+		// 	behavior: "smooth",
+		// });
+		// It scrolls to the top sometimes, but sometimes it only scrolls a little bit and requires a second click to
+		// do the scroll to the top
+		animateScroll.scrollToTop({
+			smooth: true,
 		});
 	};
 
