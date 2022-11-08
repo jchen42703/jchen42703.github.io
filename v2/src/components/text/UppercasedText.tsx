@@ -9,12 +9,14 @@ function UppercasedText({
 	underline = false,
 	bold = false,
 	classes = "",
+	onClick = undefined,
 }: {
 	text: string;
 	href?: string;
 	underline?: boolean;
 	bold?: boolean;
 	classes?: string;
+	onClick?: React.MouseEventHandler<HTMLAnchorElement>;
 }) {
 	let className = "uppercase";
 	if (underline) {
@@ -30,11 +32,12 @@ function UppercasedText({
 	}
 
 	if (href) {
-		let onClick: React.MouseEventHandler<HTMLAnchorElement> | undefined =
-			undefined;
+		let scrollToLink:
+			| React.MouseEventHandler<HTMLAnchorElement>
+			| undefined = undefined;
 		// Smoothly scroll to the div with anchor element (<a></a>)
 		if (href.startsWith("#")) {
-			onClick = (e) => {
+			scrollToLink = (e) => {
 				e.preventDefault();
 				const anchorElem = document.querySelector(href);
 				if (!anchorElem) {
@@ -47,8 +50,21 @@ function UppercasedText({
 				});
 			};
 		}
+
 		return (
-			<a className={className} href={href} onClick={onClick}>
+			<a
+				className={className}
+				href={href}
+				onClick={(e) => {
+					if (scrollToLink) {
+						scrollToLink(e);
+					}
+
+					if (onClick) {
+						onClick(e);
+					}
+				}}
+			>
 				{text}
 			</a>
 		);
