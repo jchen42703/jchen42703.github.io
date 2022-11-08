@@ -5,7 +5,7 @@ import UppercasedText from "../../components/text/UppercasedText";
  */
 function Parallaxis2020Experience() {
 	return (
-		<div id="parallaxis-ml" className="grid grid-cols-4 mt-8">
+		<div id="parallaxis-ml" className="work-content-container">
 			{/* Description with Timeline */}
 			{/* Timeline */}
 			<div className="col-span-1">

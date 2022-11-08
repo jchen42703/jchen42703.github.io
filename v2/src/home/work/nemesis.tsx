@@ -7,7 +7,7 @@ import nemesisBanner from "../../assets/nemesis.jpg";
  */
 function NemesisExperience() {
 	return (
-		<div id="nemesis" className="grid grid-cols-4 mt-8">
+		<div id="nemesis" className="work-content-container">
 			{/* Description with Timeline */}
 			{/* Timeline */}
 			<div className="col-span-1">

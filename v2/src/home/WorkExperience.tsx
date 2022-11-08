@@ -15,7 +15,6 @@ function WorkExperience() {
 				bold={true}
 				classes={"text-3xl"}
 			></UppercasedText>
-			<br />
 			<SlideIntoViewAnimation>
 				<NemesisExperience></NemesisExperience>
 			</SlideIntoViewAnimation>
