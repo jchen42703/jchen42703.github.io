@@ -18,6 +18,22 @@ function MobileDrawer({
 				{isOpen && (
 					<>
 						<motion.div
+							initial={{ opacity: 0 }}
+							animate={{
+								opacity: 0.3,
+							}}
+							exit={{
+								opacity: 0,
+							}}
+							transition={{
+								type: "spring",
+								bounce: 0,
+								duration: 0.2,
+							}}
+							onClick={() => toggleOpen()}
+							className="bg-[#404040] px-5 fixed h-full w-full flex items-center justify-center top-0 left-0"
+						/>
+						<motion.div
 							initial={{ x: "100%" }}
 							animate={{
 								x: 0,
@@ -40,22 +56,6 @@ function MobileDrawer({
 							</button>
 							{children}
 						</motion.div>
-						<motion.div
-							initial={{ opacity: 0 }}
-							animate={{
-								opacity: 1,
-							}}
-							exit={{
-								opacity: 0,
-							}}
-							transition={{
-								type: "spring",
-								bounce: 0,
-								duration: 0.2,
-							}}
-							onClick={() => toggleOpen()}
-							className="bg-transparent px-5 fixed h-full w-full flex items-center justify-center top-0 left-0"
-						/>
 					</>
 				)}
 			</AnimatePresence>
