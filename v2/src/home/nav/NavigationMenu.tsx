@@ -39,42 +39,53 @@ function NavigationMenu({ isMobile }: { isMobile: boolean }) {
 		},
 	];
 
+	const renderMenuLinks = () => {
+		if (isMobile) {
+			return;
+		}
+
+		return (
+			<>
+				{regLinkFields.map(({ title, href }) => (
+					<UppercasedText
+						key={title}
+						text={title}
+						href={href}
+						bold={true}
+						classes="text-lg"
+					></UppercasedText>
+				))}
+				<br></br>
+
+				<UppercasedText
+					text={"Work & Research"}
+					bold={true}
+					classes="text-lg"
+				></UppercasedText>
+				<br></br>
+				{workFields.map(({ title, href }) => (
+					<UppercasedText
+						key={title}
+						text={title}
+						href={href}
+						bold={true}
+						classes="text-lg"
+					></UppercasedText>
+				))}
+			</>
+		);
+	};
 	return (
 		<div className="col-span-1 flex flex-col">
-			{/* Render different drop down if mobile */}
-			{/* Render the original menu if bigger than mobile size */}
 			<UppercasedText
 				text={"Menu"}
 				bold={true}
 				classes="underline md:no-underline text-lg"
 			></UppercasedText>
+			{/* Render different drop down if mobile */}
+			{/* Render the original menu if bigger than mobile size */}
 			<br></br>
-			{regLinkFields.map(({ title, href }) => (
-				<UppercasedText
-					key={title}
-					text={title}
-					href={href}
-					bold={true}
-					classes="text-lg"
-				></UppercasedText>
-			))}
-			<br></br>
-
-			<UppercasedText
-				text={"Work & Research"}
-				bold={true}
-				classes="text-lg"
-			></UppercasedText>
-			<br></br>
-			{workFields.map(({ title, href }) => (
-				<UppercasedText
-					key={title}
-					text={title}
-					href={href}
-					bold={true}
-					classes="text-lg"
-				></UppercasedText>
-			))}
+			{renderMenuLinks()}
 		</div>
 	);
 }
