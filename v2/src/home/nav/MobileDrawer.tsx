@@ -50,7 +50,7 @@ function MobileDrawer({
 						>
 							<button
 								onClick={() => toggleOpen()}
-								className="bg-white text-black h-8 w-8 block mb-2 rounded-full ml-auto"
+								className="text-white text-4xl block mb-2 ml-auto"
 							>
 								&times;
 							</button>
