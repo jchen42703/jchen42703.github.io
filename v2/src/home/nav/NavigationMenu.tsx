@@ -12,6 +12,11 @@ function NavigationMenu({ isMobile }: { isMobile: boolean }) {
 	};
 
 	const renderLinksOnly = () => {
+		const closeModalIfMobile = () => {
+			if (isMobile) {
+				cycleMenuOpen();
+			}
+		};
 		return (
 			<>
 				{regLinkFields.map(({ title, href }) => (
@@ -21,6 +26,7 @@ function NavigationMenu({ isMobile }: { isMobile: boolean }) {
 						href={href}
 						bold={true}
 						classes="text-lg"
+						onClick={closeModalIfMobile}
 					></UppercasedText>
 				))}
 				<br></br>
@@ -38,6 +44,7 @@ function NavigationMenu({ isMobile }: { isMobile: boolean }) {
 						href={href}
 						bold={true}
 						classes="text-lg"
+						onClick={closeModalIfMobile}
 					></UppercasedText>
 				))}
 			</>
