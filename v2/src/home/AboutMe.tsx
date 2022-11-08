@@ -36,7 +36,7 @@ function AboutMe() {
 				parameter tuning grind and horrendous reproducibility issues in
 				ML research after 3 years. Ever since then, I've been dabbling
 				in full-stack, desktop application, and CLI development. I've
-				even been fortunate enough to be the founding SWE #2 of a small,
+				even been fortunate enough to be the founding SWE #3 of a small,
 				successful startup!
 			</p>
 			<br />
