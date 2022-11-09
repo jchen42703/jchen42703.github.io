@@ -12,7 +12,7 @@ function Welcome({
 	variants,
 }: {
 	children: React.ReactNode;
-	variants: Variants;
+	variants?: Variants;
 }) {
 	const isMobile = useMediaQuery({
 		query: mediaQueries.limitToMobile,
