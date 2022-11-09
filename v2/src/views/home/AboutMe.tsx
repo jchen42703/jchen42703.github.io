@@ -1,4 +1,4 @@
-import UppercasedText from "../components/text/UppercasedText";
+import UppercasedText from "../../components/text/UppercasedText";
 
 /**
  * About Me Component

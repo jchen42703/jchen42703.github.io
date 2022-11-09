@@ -1,9 +1,9 @@
-import UppercasedText from "../components/text/UppercasedText";
-import NemesisExperience from "./work/nemesis";
-import Parallaxis2020Experience from "./work/parallaxis2020";
-import Parallaxis2021Experience from "./work/parallaxis2021";
-import SlideIntoViewAnimation from "../components/animations/SlideIntoView";
-import HSSeniorYearResearch from "./research/HSSeniorYearResearch";
+import UppercasedText from "../../components/text/UppercasedText";
+import NemesisExperience from "../work/nemesis";
+import Parallaxis2020Experience from "../work/parallaxis2020";
+import Parallaxis2021Experience from "../work/parallaxis2021";
+import SlideIntoViewAnimation from "../../components/animations/SlideIntoView";
+import HSSeniorYearResearch from "../research/HSSeniorYearResearch";
 
 /**
  * ProjectExperience Component

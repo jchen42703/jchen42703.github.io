@@ -1,12 +1,12 @@
-import AboutMe from "./home/AboutMe";
-import Welcome from "./home/Welcome";
-import WorkExperience from "./home/WorkExperience";
+import AboutMe from "./views/home/AboutMe";
+import Welcome from "./views/home/Welcome";
+import WorkExperience from "./views/work/WorkExperience";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import "./styles/styles.scss";
 import ScrollButton from "./components/button/ScrollToTopButton";
 import ScrollProgressBar from "./components/animations/ScrollProgressBar";
-import ProjectExperience from "./home/ProjectExperience";
+import ProjectExperience from "./views/projects/ProjectExperience";
 import Footer from "./components/footer";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ErrorPage from "./views/error";
