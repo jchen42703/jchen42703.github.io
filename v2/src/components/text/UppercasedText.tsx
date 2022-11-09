@@ -1,3 +1,5 @@
+import { HashLink } from "react-router-hash-link";
+
 /**
  * Abstracts uppercased text, whether that be headers or links.
  *
@@ -32,6 +34,20 @@ function UppercasedText({
 	}
 
 	if (href) {
+		// If navigation link, use a react router link
+		if (href.startsWith("/")) {
+			return (
+				<HashLink
+					smooth
+					to={href}
+					className={className}
+					onClick={onClick}
+				>
+					{text}
+				</HashLink>
+			);
+		}
+
 		let scrollToLink:
 			| React.MouseEventHandler<HTMLAnchorElement>
 			| undefined = undefined;
@@ -69,6 +85,7 @@ function UppercasedText({
 			</a>
 		);
 	}
+
 	return (
 		<span className={className} onClick={onClick}>
 			{text}
