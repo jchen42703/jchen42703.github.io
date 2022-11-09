@@ -1,14 +1,13 @@
 import { useCycle } from "framer-motion";
 import UppercasedText from "../../components/text/UppercasedText";
 import MobileDrawer from "./MobileDrawer";
-import { regLinkFields, workFields } from "./navFields";
+import { navFields } from "./navFields";
 
 function NavigationMenu({ isMobile }: { isMobile: boolean }) {
 	const [dispMobileMenu, cycleMenuOpen] = useCycle(false, true);
 
 	const toggleMobileMenu = () => {
 		cycleMenuOpen();
-		// console.log("toggle");
 	};
 
 	const renderLinksOnly = () => {
@@ -17,35 +16,31 @@ function NavigationMenu({ isMobile }: { isMobile: boolean }) {
 				cycleMenuOpen();
 			}
 		};
+
 		return (
 			<>
-				{regLinkFields.map(({ title, href }) => (
-					<UppercasedText
-						key={title}
-						text={title}
-						href={href}
-						bold={true}
-						classes="text-lg"
-						onClick={closeModalIfMobile}
-					></UppercasedText>
-				))}
-				<br></br>
-
-				<UppercasedText
-					text={"Work & Research"}
-					bold={true}
-					classes="text-lg"
-				></UppercasedText>
-				<br></br>
-				{workFields.map(({ title, href }) => (
-					<UppercasedText
-						key={title}
-						text={title}
-						href={href}
-						bold={true}
-						classes="text-lg"
-						onClick={closeModalIfMobile}
-					></UppercasedText>
+				{navFields.map(({ title, href, subFields }) => (
+					<>
+						<UppercasedText
+							key={title}
+							text={title}
+							href={href}
+							bold={true}
+							classes="text-lg"
+							onClick={closeModalIfMobile}
+						></UppercasedText>
+						{subFields &&
+							subFields.map((subField) => (
+								<UppercasedText
+									key={subField.title}
+									text={subField.title}
+									href={`${href}${subField.href}`}
+									bold={true}
+									classes="text-lg ml-12"
+									onClick={closeModalIfMobile}
+								></UppercasedText>
+							))}
+					</>
 				))}
 			</>
 		);
