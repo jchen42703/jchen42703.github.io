@@ -8,17 +8,45 @@ import ScrollButton from "./components/button/ScrollToTopButton";
 import ScrollProgressBar from "./components/animations/ScrollProgressBar";
 import ProjectExperience from "./home/ProjectExperience";
 import Footer from "./components/footer";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import ErrorPage from "./views/error";
 
 library.add(fab);
+
+const router = createBrowserRouter([
+	{
+		path: "/",
+		element: (
+			<>
+				<Welcome></Welcome>
+				<AboutMe></AboutMe>
+			</>
+		),
+		errorElement: <ErrorPage />,
+	},
+	{
+		path: "work",
+		element: <WorkExperience></WorkExperience>,
+	},
+	{
+		path: "research",
+		element: <ProjectExperience></ProjectExperience>,
+	},
+	{
+		path: "projects",
+		element: <ProjectExperience></ProjectExperience>,
+	},
+	{
+		path: "blog",
+		element: <div>WIP</div>,
+	},
+]);
 
 function App() {
 	return (
 		<>
 			<ScrollProgressBar></ScrollProgressBar>
-			<Welcome></Welcome>
-			<AboutMe></AboutMe>
-			<WorkExperience></WorkExperience>
-			<ProjectExperience></ProjectExperience>
+			<RouterProvider router={router}></RouterProvider>
 			<Footer></Footer>
 			<ScrollButton></ScrollButton>
 		</>
