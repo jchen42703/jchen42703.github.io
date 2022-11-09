@@ -12,7 +12,7 @@ function AboutMe() {
 				classes={"text-3xl"}
 			></UppercasedText>
 			<p className="mt-4">
-				Hi! I'm Joseph! Welcome to my personal website! Here, I try to
+				Hi! I'm Joseph! Thank you for stopping by! Here, I try to
 				humanize my project and work experiences and try to make it easy
 				to navigate! If you want a TLDR, feel free to take a look at my
 				resume{" "}
@@ -21,28 +21,44 @@ function AboutMe() {
 					className="font-bold underline"
 				>
 					here
-				</a>
-				! Quick caveat: it excludes 3+ years of research experience
-				prior to college to be concise, but that experience is on my
-				LinkedIn ¯\_(ツ)_/¯.
+				</a>{" "}
+				or take a look at my portfolio gallery below. Quick caveat: the
+				linked resume excludes 3+ years of research experience prior to
+				college to be concise, but that experience is on my LinkedIn and
+				this website ¯\_(ツ)_/¯.
 			</p>
 			<br />
 			<p>
-				A little about me: I love to code in my free-time, whether that
-				be implementing new business ideas or filling in my knowledge
-				gaps! I started seriously coding in my sophomore year of high
-				school to do machine learning research and won some awards at
-				state competitions. I eventually got sick of the never-ending
-				parameter tuning grind and horrendous reproducibility issues in
-				ML research after 3 years. Ever since then, I've been dabbling
-				in full-stack, desktop application, and CLI development. I've
-				even been fortunate enough to be the founding SWE #3 of a small,
-				successful startup!
+				I first discovered my passion for computer science in high
+				school when I did deep learning research for automatic medical
+				diagnoses. However, after 3 years of research, I wanted to see
+				the models I made actually being used by others in real
+				software. I decided to pursue computer science with a software
+				engineering focus in college to learn the skills necessary for
+				writing quality software to integrate ML models in production.
 			</p>
 			<br />
 			<p>
-				Besides coding, I cook, work out and dance in my free time. I
-				compiled some tasy and easy recipes @{" "}
+				{" "}
+				That same desire also led me to seek opportunities to grow as a
+				software engineer and researcher. At Parallaxis LLC, I worked as
+				a machine learning R&D intern and developed a REST API for
+				automatically generating mouse movements. Likewise, at Nemesis
+				Automation, I grew my software engineering skills as a founding
+				software engineer to design and create a desktop application for
+				automatically purchasing Ethereum and Solana NFTs and managing
+				blockchain wallets. Although I’ve enjoyed the process of
+				building successful software to solve real-world issues at
+				various companies, I didn’t have the opportunity to leverage my
+				machine learning experience to meaningfully impact their
+				operations. That’s why I’m currently looking for software
+				engineering, machine learning, and MLOps opportunities to grow
+				and generate value.
+			</p>
+			<br />
+			<p>
+				Besides SWE and research, I like to cook, work out and dance in
+				my free time! I compiled some tasty and easy recipes @{" "}
 				<a
 					href="https://github.com/jchen42703/broke-college-student-recipes"
 					className="font-bold underline"
