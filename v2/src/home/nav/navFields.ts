@@ -1,18 +1,3 @@
-export const regLinkFields = [
-	{
-		title: "<About Me />",
-		href: "#aboutme",
-	},
-	{
-		title: "<Resume />",
-		href: "https://github.com/jchen42703/resumes/blob/main/latest_generic.pdf",
-	},
-	{
-		title: "<Contact Me />",
-		href: "#contact",
-	},
-];
-
 export const workFields = [
 	{
 		title: "<Nemesis />",
@@ -26,12 +11,57 @@ export const workFields = [
 		title: "<Parallaxis (ML) />",
 		href: "#parallaxis-ml",
 	},
+];
+
+export const projectsFields = [
 	{
-		title: "<Machine Learning Research />",
-		href: "#machinelearning",
+		title: "<Applied ML />",
+		href: "#applied-ml",
 	},
 	{
-		title: "<Applied ML (Hobby) />",
-		href: "#projects-mlops",
+		title: "<Full Stack Dev />",
+		href: "#parallaxis-swe",
+	},
+	{
+		title: "<DevOps />",
+		href: "#devops",
+	},
+
+	{
+		title: "<Kaggle />",
+		href: "#kaggle",
+	},
+];
+
+export const navFields = [
+	{
+		title: "<About Me />",
+		href: "#aboutme",
+	},
+	{
+		title: "<Work />",
+		href: "/work",
+		subFields: workFields,
+	},
+	{
+		title: "<Machine Learning Research />",
+		href: "/research",
+	},
+	{
+		title: "<Projects />",
+		href: "/projects",
+		subFields: projectsFields,
+	},
+	{
+		title: "<Blog />",
+		href: "/blog",
+	},
+	{
+		title: "<Resume />",
+		href: "https://github.com/jchen42703/resumes/blob/main/latest_generic.pdf",
+	},
+	{
+		title: "<Contact Me />",
+		href: "#contact",
 	},
 ];
