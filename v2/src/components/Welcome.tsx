@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import { useMediaQuery } from "react-responsive";
-import UppercasedText from "../../components/text/UppercasedText";
-import { mediaQueries } from "../../services/mediaQueries";
-import NavigationMenu from "../../components/nav/NavigationMenu";
+import UppercasedText from "./text/UppercasedText";
+import { mediaQueries } from "../services/mediaQueries";
+import NavigationMenu from "./nav/NavigationMenu";
 
 /**
  * Welcome and Navigation Component

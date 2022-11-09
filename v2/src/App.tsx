@@ -1,27 +1,21 @@
-import AboutMe from "./views/home/AboutMe";
-import Welcome from "./views/home/Welcome";
-import WorkExperience from "./views/work/WorkExperience";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
-import "./styles/styles.scss";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ScrollButton from "./components/button/ScrollToTopButton";
+import Footer from "./components/footer";
 import ScrollProgressBar from "./components/animations/ScrollProgressBar";
 import ProjectExperience from "./views/projects/ProjectExperience";
-import Footer from "./components/footer";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ErrorPage from "./views/error";
+import WorkExperience from "./views/work/WorkExperience";
+import Home from "./views/home/Home";
+import "./styles/styles.scss";
 
 library.add(fab);
 
 const router = createBrowserRouter([
 	{
 		path: "/",
-		element: (
-			<>
-				<Welcome></Welcome>
-				<AboutMe></AboutMe>
-			</>
-		),
+		element: <Home></Home>,
 		errorElement: <ErrorPage />,
 	},
 	{
