@@ -1,11 +1,11 @@
-const VideoGIF = ({ src, classes }: { src: string; classes: string }) => {
+const VideoGIF = ({ src, className }: { src: string; className: string }) => {
 	return (
 		<video
 			autoPlay={true}
 			loop={true}
 			muted={true}
 			playsInline={true}
-			className={classes}
+			className={className}
 		>
 			<source src={src} type="video/mp4" />
 		</video>
