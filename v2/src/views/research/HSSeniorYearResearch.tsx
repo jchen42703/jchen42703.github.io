@@ -1,23 +1,24 @@
 import UppercasedText from "../../components/text/UppercasedText";
+import kidneySeg from "../../assets/label_case_00113.png";
 
 /**
  * HSSenioYearResearch Component
  */
 function HSSeniorYearResearch() {
 	return (
-		<div id="machinelearning" className="work-content-container">
-			{/* Description with Timeline */}
-			{/* Timeline */}
+		<div className="work-content-container">
 			<div className="col-span-1">
 				<UppercasedText
-					text={"Fall 2016-Spring 2020"}
+					text={"Fall 2019-Spring 2020"}
 					bold={true}
 					classes={"text-2xl"}
 				></UppercasedText>
 			</div>
 			<div className="col-span-3">
 				<UppercasedText
-					text={"Deep Learning Research for Medical Diagnoses"}
+					text={
+						"2D Convolutional Neural Networks for Automated Kidney and Renal Tumor Segmentation"
+					}
 					bold={true}
 					classes={"text-2xl inline-block"}
 				></UppercasedText>
@@ -28,25 +29,44 @@ function HSSeniorYearResearch() {
 					classes={"text-1xl"}
 				></UppercasedText>
 				<br />
-				<div className="mt-2">
-					<p className="italic">
-						TLDR: Business was booming, and the CEO brought me
-						onboard to automate mouse movements for one of the APIs
-						they were building and planning to monetize. Built a GAN
-						to automate mouse movements, but it was too costly to
-						run at the scale that the company needed. Ended up
-						implementing and using a normal algorithimic Go mouse
-						movement library with generated noise and preconfigured
-						route "shapes." Learned a lot of hard lessons during
-						this internship.
-					</p>
+				<p>
+					Using 2D & 3D convolutional neural networks for the{" "}
+					<a
+						href="https://kits19.grand-challenge.org/"
+						className="underline"
+					>
+						2019 Kidney and Kidney Tumor Segmentation Challenge.
+					</a>{" "}
+				</p>
+				<ul>
+					<li>
+						<b>Code: </b>{" "}
+						<a
+							href="https://github.com/jchen42703/kits19-cnn"
+							className="underline"
+						>
+							https://github.com/jchen42703/kits19-cnn
+						</a>
+					</li>
+					<li>
+						{" "}
+						<b>Conference Paper: </b>{" "}
+						<a
+							href="https://www.researchgate.net/publication/336247303_A_2D_U-Net_for_Automated_Kidney_and_Renal_Tumor_Segmentation"
+							className="underline"
+						>
+							A 2D U-Net for Automated Kidney and Renal Tumor
+							Segmentation
+						</a>
+					</li>
+				</ul>
+				<div className="flex flex-col justify-center items-center w-[100%]">
+					<img
+						src={kidneySeg}
+						alt="Kidney Segmentation"
+						className="relative rounded-md w-[30%]"
+					/>
 				</div>
-				<UppercasedText
-					text={"Story Time"}
-					bold={true}
-					classes={"text-1xl inline-block mt-2"}
-				></UppercasedText>
-				<div className="mt-2">WIP</div>
 			</div>
 		</div>
 	);
