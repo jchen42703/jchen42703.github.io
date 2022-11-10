@@ -1,4 +1,5 @@
 import UppercasedText from "../../components/text/UppercasedText";
+import mouseMovementsGif from "../../assets/mouse_movements.gif";
 
 /**
  * Parallaxis2020Experience Component
@@ -16,10 +17,15 @@ function Parallaxis2020Experience() {
 				></UppercasedText>
 			</div>
 			<div className="col-span-3">
+				<img
+					src={mouseMovementsGif}
+					alt="mouse movements demo"
+					className="rounded-md"
+				/>
 				<UppercasedText
 					text={"Parallaxis LLC"}
 					bold={true}
-					classes={"text-2xl inline-block"}
+					classes={"text-2xl inline-block mt-4"}
 				></UppercasedText>
 				<br />
 				<UppercasedText
@@ -37,7 +43,7 @@ function Parallaxis2020Experience() {
 						run at the scale that the company needed. Ended up
 						implementing and using a normal algorithimic Go mouse
 						movement library with generated noise and preconfigured
-						route "shapes." Learned a lot of hard lessons during
+						route "shapes." Learned a lot of valuable lessons during
 						this internship.
 					</p>
 				</div>
