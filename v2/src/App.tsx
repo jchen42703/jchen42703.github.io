@@ -10,6 +10,7 @@ import WorkExperience from "./views/work/WorkExperience";
 import Home from "./views/home/Home";
 import "./styles/styles.scss";
 import ResearchExperience from "./views/research/ResearchExperience";
+import Blog from "./views/blog/Blog";
 
 library.add(fab);
 
@@ -33,7 +34,7 @@ const router = createBrowserRouter([
 	},
 	{
 		path: "blog",
-		element: <div>WIP</div>,
+		element: <Blog />,
 	},
 ]);
 
