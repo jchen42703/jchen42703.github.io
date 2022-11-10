@@ -75,7 +75,7 @@ function NemesisExperience() {
 						for the official release, which massively grew the
 						userbase and sales. Learned tons about building desktop
 						applications, Svelte, and of course, blockchain! Left
-						due to burnout.
+						due to burnout and losing faith in the NFT industry.
 					</p>
 				</div>
 
