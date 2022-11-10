@@ -2,6 +2,7 @@ import { motion, Variants } from "framer-motion";
 import SlideIntoViewAnimation from "../../components/animations/SlideIntoView";
 import UppercasedText from "../../components/text/UppercasedText";
 import Welcome from "../../components/Welcome";
+import HSJuniorYearResearch from "./HSJuniorYearResearch";
 import HSSeniorYearResearch from "./HSSeniorYearResearch";
 
 /**
@@ -59,6 +60,9 @@ function ResearchExperience() {
 				</p>
 				<SlideIntoViewAnimation>
 					<HSSeniorYearResearch></HSSeniorYearResearch>
+				</SlideIntoViewAnimation>
+				<SlideIntoViewAnimation>
+					<HSJuniorYearResearch></HSJuniorYearResearch>
 				</SlideIntoViewAnimation>
 			</div>
 		</div>
