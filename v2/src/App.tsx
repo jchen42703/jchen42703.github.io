@@ -5,12 +5,12 @@ import ScrollButton from "./components/button/ScrollToTopButton";
 import Footer from "./components/footer";
 import ScrollProgressBar from "./components/animations/ScrollProgressBar";
 import ProjectExperience from "./views/projects/ProjectExperience";
-import ErrorPage from "./views/error";
 import WorkExperience from "./views/work/WorkExperience";
-import Home from "./views/home/Home";
-import "./styles/styles.scss";
 import ResearchExperience from "./views/research/ResearchExperience";
+import Home from "./views/home/Home";
 import Blog from "./views/blog/Blog";
+import ErrorPage from "./views/error";
+import "./styles/styles.scss";
 
 library.add(fab);
 
