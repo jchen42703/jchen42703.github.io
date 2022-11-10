@@ -19,7 +19,7 @@ function AboutMe() {
 				resume{" "}
 				<UnderlinedLink href="https://github.com/jchen42703/resumes/blob/main/latest_generic.pdf">
 					here
-				</UnderlinedLink>{" "}
+				</UnderlinedLink>
 				. Quick caveat: the linked resume excludes 3+ years of research
 				experience prior to college to be concise, but that experience
 				is on my LinkedIn and this website ¯\_(ツ)_/¯.
