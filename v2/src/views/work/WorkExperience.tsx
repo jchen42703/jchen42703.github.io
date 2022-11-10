@@ -38,11 +38,6 @@ function WorkExperience() {
 				))}
 			</Welcome>
 			<div className="content-container-no-top">
-				<UppercasedText
-					text={"Work & Research"}
-					bold={true}
-					classes={"text-3xl"}
-				></UppercasedText>
 				<SlideIntoViewAnimation>
 					<NemesisExperience></NemesisExperience>
 				</SlideIntoViewAnimation>
