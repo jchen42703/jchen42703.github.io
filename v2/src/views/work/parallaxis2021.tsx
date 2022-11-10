@@ -35,7 +35,7 @@ function Parallaxis2021Experience() {
 						got better at Go and web reverse engineering. Learned a
 						lot about how modern anti-bot practices work and Fastly
 						caching. Buutttt business eventually went under due
-						being unable to get enough traction when the product was
+						being unable to get enough traction when the rewrite was
 						done (╥_╥).
 					</p>
 				</div>
