@@ -20,9 +20,8 @@ function NavigationMenu({ isMobile }: { isMobile: boolean }) {
 		return (
 			<>
 				{navFields.map(({ title, href, subFields }) => (
-					<>
+					<div key={title} className="flex flex-col">
 						<UppercasedText
-							key={title}
 							text={title}
 							href={href}
 							bold={true}
@@ -36,11 +35,11 @@ function NavigationMenu({ isMobile }: { isMobile: boolean }) {
 									text={subField.title}
 									href={`${href}${subField.href}`}
 									bold={true}
-									classes="text-lg ml-12"
+									classes="text-lg ml-10"
 									onClick={closeModalIfMobile}
 								></UppercasedText>
 							))}
-					</>
+					</div>
 				))}
 			</>
 		);
