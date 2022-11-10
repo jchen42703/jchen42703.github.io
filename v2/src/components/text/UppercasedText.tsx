@@ -80,6 +80,8 @@ function UppercasedText({
 						onClick(e);
 					}
 				}}
+				target="_blank"
+				rel="noreferrer"
 			>
 				{text}
 			</a>

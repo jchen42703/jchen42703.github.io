@@ -18,19 +18,31 @@ const Footer = () => {
 				<a
 					href="https://www.linkedin.com/in/joseph-chen2024"
 					className="fab"
+					target="_blank"
+					rel="noreferrer"
 				>
 					<FontAwesomeIcon
 						icon={["fab", "linkedin"]}
 						className="fontawesome"
 					/>
 				</a>
-				<a href="https://github.com/jchen42703" className="fab">
+				<a
+					href="https://github.com/jchen42703"
+					className="fab"
+					target="_blank"
+					rel="noreferrer"
+				>
 					<FontAwesomeIcon
 						icon={["fab", "github"]}
 						className="fontawesome"
 					/>
 				</a>
-				<a href="https://www.instagram.com/jchen___zz/" className="fab">
+				<a
+					href="https://www.instagram.com/jchen___zz/"
+					className="fab"
+					target="_blank"
+					rel="noreferrer"
+				>
 					<FontAwesomeIcon
 						icon={["fab", "instagram"]}
 						className="fontawesome"

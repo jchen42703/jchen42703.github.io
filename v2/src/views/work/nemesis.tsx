@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import UppercasedText from "../../components/text/UppercasedText";
 import nemesisBanner from "../../assets/nemesis.jpg";
+import UnderlinedLink from "../../components/UnderlinedLink";
 
 /**
  * NemesisExperience Component
@@ -36,20 +37,25 @@ function NemesisExperience() {
 				></UppercasedText>
 				<br />
 				<div className="flex flex-row">
-					<a href="https://nemesisautomation.io/" className="mr-2">
+					<UnderlinedLink
+						href="https://nemesisautomation.io/"
+						className="mr-2"
+					>
 						[Official Website]
-					</a>
-					<a
+					</UnderlinedLink>
+					<UnderlinedLink
 						href="https://opensea.io/collection/nemesis-bot"
 						className="mr-2"
 					>
 						[Opensea]
-					</a>
+					</UnderlinedLink>
 				</div>
 				<div className="flex flex-row mt-2">
 					<a
 						href="https://twitter.com/nemesisdotio?lang=en"
 						className="fab mr-2"
+						target="_blank"
+						rel="noreferrer"
 					>
 						<FontAwesomeIcon
 							icon={["fab", "twitter"]}
@@ -59,6 +65,8 @@ function NemesisExperience() {
 					<a
 						href="https://github.com/ChineseNFTFactory"
 						className="fab mr-2"
+						target="_blank"
+						rel="noreferrer"
 					>
 						<FontAwesomeIcon
 							icon={["fab", "github"]}
@@ -160,12 +168,11 @@ function NemesisExperience() {
 					</p>
 					<br />
 					<p>
-						The other two developers,{" "}
-						<a href="wang@nemesisautomation.io">Wang</a> and Rimas
-						were busy working on contracted collaborations (up to
-						$150,000 in revenue). As a result, after the initial
-						release, I was in-charge of maintaining and improving
-						Nemesis v1 (besides certain Ethereum aspects).{" "}
+						The other two developers, Wang and Rimas were busy
+						working on contracted collaborations (up to $150,000 in
+						revenue). As a result, after the initial release, I was
+						in-charge of maintaining and improving Nemesis v1
+						(besides certain Ethereum aspects).{" "}
 						<b>
 							That meant: fix bugs, close customer tickets, and
 							push out in-demand features.
