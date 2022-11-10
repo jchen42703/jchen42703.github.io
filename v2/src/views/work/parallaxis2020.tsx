@@ -1,5 +1,6 @@
 import UppercasedText from "../../components/text/UppercasedText";
 import mouseMovementsGif from "../../assets/mouse_movements.gif";
+import UnderlinedLink from "../../components/UnderlinedLink";
 
 /**
  * Parallaxis2020Experience Component
@@ -44,7 +45,11 @@ function Parallaxis2020Experience() {
 						implementing and using a normal algorithimic Go mouse
 						movement library with generated noise and preconfigured
 						route "shapes." Learned a lot of valuable lessons during
-						this internship.
+						this internship. Code is open-sourced at{" "}
+						<UnderlinedLink href="https://github.com/jchen42703/ai_mouse_movements">
+							https://github.com/jchen42703/ai_mouse_movements
+						</UnderlinedLink>
+						.
 					</p>
 				</div>
 				<UppercasedText
