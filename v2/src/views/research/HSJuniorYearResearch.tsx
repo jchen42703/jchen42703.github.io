@@ -26,7 +26,7 @@ function HSJuniorYearResearch() {
 				></UppercasedText>
 				<br />
 				<UppercasedText
-					text={"Junior Year"}
+					text={"High School Junior Year"}
 					bold={true}
 					classes={"text-1xl"}
 				></UppercasedText>

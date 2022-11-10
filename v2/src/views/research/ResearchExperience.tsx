@@ -39,7 +39,7 @@ function ResearchExperience() {
 			</Welcome>
 			<div className="content-container-no-top">
 				<UppercasedText
-					text={"Summary"}
+					text={"Introduction"}
 					bold={true}
 					classes={"text-3xl mb-4"}
 				></UppercasedText>
