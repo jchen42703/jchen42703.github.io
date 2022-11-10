@@ -1,4 +1,5 @@
 import UppercasedText from "../../components/text/UppercasedText";
+import UnderlinedLink from "../../components/UnderlinedLink";
 
 /**
  * ParallaxisExperience Component
@@ -65,12 +66,9 @@ function Parallaxis2021Experience() {
 					</li>
 					<li>
 						<b>Farewell Medium Post: </b>
-						<a
-							href="https://medium.com/@keimaoooo/rattenfanger-years-worth-of-reflection-519037496b5f"
-							className="underline"
-						>
+						<UnderlinedLink href="https://medium.com/@keimaoooo/rattenfanger-years-worth-of-reflection-519037496b5f">
 							Rattenfanger: Years Worth of Reflection
-						</a>
+						</UnderlinedLink>
 					</li>{" "}
 				</ul>
 				<UppercasedText
