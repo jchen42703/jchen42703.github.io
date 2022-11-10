@@ -48,11 +48,46 @@ function Parallaxis2020Experience() {
 					</p>
 				</div>
 				<UppercasedText
-					text={"Story Time"}
+					text={"Tech Stack"}
 					bold={true}
 					classes={"text-1xl inline-block mt-2"}
 				></UppercasedText>
-				<div className="mt-2">WIP</div>
+				<br />
+				<ul className="list-items mt-2">
+					<li>
+						<b>API:</b> Javascript, TensorFlowJS, Express
+					</li>
+					<li>
+						<b>R&D:</b> Python, TensorFlow, Keras, Google
+						Colaboratory
+					</li>
+					<li>
+						Chose TensorFlow as my DL framework because at the time,
+						it was the most stable framework for shipping deep
+						learning models to production.
+					</li>
+				</ul>
+				<UppercasedText
+					text={"What I'd Did"}
+					bold={true}
+					classes={"text-1xl inline-block mt-2"}
+				></UppercasedText>
+				<br />
+				<ul className="list-items mt-2">
+					<li>
+						Researched and developed generative adversarial neural
+						networks to automatically generate human-like mouse
+						movements using Google Colaboratory.
+					</li>
+					<li>
+						Made a REST API to demonstrate how the usage may look in
+						production.
+					</li>
+					<li>
+						Learned to better breakdown a business problem to a
+						technical solution.
+					</li>
+				</ul>
 			</div>
 		</div>
 	);
