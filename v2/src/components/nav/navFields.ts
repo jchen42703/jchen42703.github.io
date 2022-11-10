@@ -35,8 +35,8 @@ export const projectsFields = [
 
 export const navFields = [
 	{
-		title: "<About Me />",
-		href: "/#aboutme",
+		title: "<Home />",
+		href: "/",
 	},
 	{
 		title: "<Work />",
