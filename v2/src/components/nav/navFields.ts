@@ -20,7 +20,7 @@ export const projectsFields = [
 	},
 	{
 		title: "<Full Stack Dev />",
-		href: "#parallaxis-swe",
+		href: "#fullstack",
 	},
 	{
 		title: "<DevOps />",
