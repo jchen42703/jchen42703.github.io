@@ -29,6 +29,7 @@ code {
 		monospace;
 }
 
-p {
+p,
+li {
 	@apply text-lg;
 }
