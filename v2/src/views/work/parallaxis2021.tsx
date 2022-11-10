@@ -10,7 +10,7 @@ function Parallaxis2021Experience() {
 			{/* Timeline */}
 			<div className="col-span-1">
 				<UppercasedText
-					text={"Aug-Dec 2021"}
+					text={"Jun-Dec 2021"}
 					bold={true}
 					classes={"text-2xl"}
 				></UppercasedText>
