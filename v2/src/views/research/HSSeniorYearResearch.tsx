@@ -1,5 +1,6 @@
 import UppercasedText from "../../components/text/UppercasedText";
 import kidneySeg from "../../assets/label_case_00113.png";
+import UnderlinedLink from "../../components/UnderlinedLink";
 
 /**
  * HSSenioYearResearch Component
@@ -31,33 +32,24 @@ function HSSeniorYearResearch() {
 				<br />
 				<p>
 					Using 2D & 3D convolutional neural networks for the{" "}
-					<a
-						href="https://kits19.grand-challenge.org/"
-						className="underline"
-					>
+					<UnderlinedLink href="https://kits19.grand-challenge.org/">
 						2019 Kidney and Kidney Tumor Segmentation Challenge.
-					</a>{" "}
+					</UnderlinedLink>{" "}
 				</p>
 				<ul>
 					<li>
 						<b>Code: </b>{" "}
-						<a
-							href="https://github.com/jchen42703/kits19-cnn"
-							className="underline"
-						>
+						<UnderlinedLink href="https://github.com/jchen42703/kits19-cnn">
 							https://github.com/jchen42703/kits19-cnn
-						</a>
+						</UnderlinedLink>{" "}
 					</li>
 					<li>
 						{" "}
 						<b>Conference Paper: </b>{" "}
-						<a
-							href="https://www.researchgate.net/publication/336247303_A_2D_U-Net_for_Automated_Kidney_and_Renal_Tumor_Segmentation"
-							className="underline"
-						>
+						<UnderlinedLink href="https://www.researchgate.net/publication/336247303_A_2D_U-Net_for_Automated_Kidney_and_Renal_Tumor_Segmentation">
 							A 2D U-Net for Automated Kidney and Renal Tumor
-							Segmentation
-						</a>
+							Segmentation{" "}
+						</UnderlinedLink>{" "}
 					</li>
 				</ul>
 				<div className="flex flex-col justify-center items-center w-[100%]">
