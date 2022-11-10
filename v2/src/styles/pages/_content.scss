@@ -1,0 +1,24 @@
+$content-top-padding: 9vw;
+$content-bot-padding: 9vh;
+$content-x-padding: 10vw;
+
+.content-container {
+	padding: $content-top-padding $content-x-padding $content-bot-padding;
+}
+
+.content-container-no-top {
+	padding: 0 $content-x-padding $content-bot-padding;
+}
+
+.work-content-container {
+	@apply mt-8 flex flex-col md:grid md:grid-cols-4;
+}
+
+ul {
+	list-style-position: inside;
+	list-style-type: disc;
+}
+
+li {
+	list-style-type: disc;
+}

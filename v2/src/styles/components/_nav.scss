@@ -1,0 +1,6 @@
+@use "../abstract/_colors.scss" as colors;
+
+.nav-drawer {
+	color: white;
+	background-color: colors.$black;
+}
