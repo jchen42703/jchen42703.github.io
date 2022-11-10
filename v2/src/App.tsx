@@ -9,26 +9,27 @@ import ErrorPage from "./views/error";
 import WorkExperience from "./views/work/WorkExperience";
 import Home from "./views/home/Home";
 import "./styles/styles.scss";
+import ResearchExperience from "./views/research/ResearchExperience";
 
 library.add(fab);
 
 const router = createBrowserRouter([
 	{
 		path: "/",
-		element: <Home></Home>,
+		element: <Home />,
 		errorElement: <ErrorPage />,
 	},
 	{
 		path: "work",
-		element: <WorkExperience></WorkExperience>,
+		element: <WorkExperience />,
 	},
 	{
 		path: "research",
-		element: <ProjectExperience></ProjectExperience>,
+		element: <ResearchExperience />,
 	},
 	{
 		path: "projects",
-		element: <ProjectExperience></ProjectExperience>,
+		element: <ProjectExperience />,
 	},
 	{
 		path: "blog",
