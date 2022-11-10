@@ -2,11 +2,11 @@
  * Simple underlined anchor link element with customizable css to reduce code duplication.
  */
 function UnderlinedLink({
-	text,
+	children,
 	href,
 	className = "",
 }: {
-	text: string;
+	children: React.ReactNode;
 	href: string;
 	className?: string;
 }) {
@@ -18,8 +18,8 @@ function UnderlinedLink({
 	}
 
 	return (
-		<a href={href} className={className}>
-			{text}
+		<a href={href} className={className} target="_blank" rel="noreferrer">
+			{children}
 		</a>
 	);
 }
