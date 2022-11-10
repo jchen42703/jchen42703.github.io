@@ -1,9 +1,5 @@
 import { motion, Variants } from "framer-motion";
 import UppercasedText from "../../components/text/UppercasedText";
-import NemesisExperience from "../work/nemesis";
-import Parallaxis2020Experience from "../work/parallaxis2020";
-import Parallaxis2021Experience from "../work/parallaxis2021";
-import SlideIntoViewAnimation from "../../components/animations/SlideIntoView";
 import Welcome from "../../components/Welcome";
 
 /**
@@ -37,16 +33,8 @@ function ResearchExperience() {
 					</motion.div>
 				))}
 			</Welcome>
-			<div className="content-container-no-top">
-				<SlideIntoViewAnimation>
-					<NemesisExperience></NemesisExperience>
-				</SlideIntoViewAnimation>
-				<SlideIntoViewAnimation>
-					<Parallaxis2021Experience></Parallaxis2021Experience>
-				</SlideIntoViewAnimation>
-				<SlideIntoViewAnimation>
-					<Parallaxis2020Experience></Parallaxis2020Experience>
-				</SlideIntoViewAnimation>
+			<div className="flex flex-col justify-center items-center h-[50vh] w-full text-3xl">
+				Still in the works ( ˘▽˘)っ♨{" "}
 			</div>
 		</div>
 	);
