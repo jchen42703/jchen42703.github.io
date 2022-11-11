@@ -40,7 +40,7 @@ function HSSeniorYearResearch() {
 					<li>
 						<b>Code: </b>{" "}
 						<UnderlinedLink href="https://github.com/jchen42703/kits19-cnn">
-							https://github.com/jchen42703/kits19-cnn
+							jchen42703/kits19-cnn
 						</UnderlinedLink>{" "}
 					</li>
 					<li>

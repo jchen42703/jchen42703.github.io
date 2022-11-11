@@ -43,8 +43,8 @@ function App() {
 		<>
 			<ScrollProgressBar></ScrollProgressBar>
 			<RouterProvider router={router}></RouterProvider>
-			<Footer></Footer>
 			<ScrollButton></ScrollButton>
+			<Footer></Footer>
 		</>
 	);
 }

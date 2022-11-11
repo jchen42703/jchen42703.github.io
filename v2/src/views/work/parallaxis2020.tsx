@@ -47,7 +47,7 @@ function Parallaxis2020Experience() {
 						route "shapes." Learned a lot of valuable lessons during
 						this internship. Code is open-sourced at{" "}
 						<UnderlinedLink href="https://github.com/jchen42703/ai_mouse_movements">
-							https://github.com/jchen42703/ai_mouse_movements
+							here on GitHub
 						</UnderlinedLink>
 						.
 					</p>

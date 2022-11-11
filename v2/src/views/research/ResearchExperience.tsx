@@ -38,38 +38,41 @@ function ResearchExperience() {
 				))}
 			</Welcome>
 			<div className="content-container-no-top">
-				<UppercasedText
-					text={"Introduction"}
-					bold={true}
-					classes={"text-3xl mb-4"}
-				></UppercasedText>
-				<p>
-					AI Research is how I actually got into programming! Big
-					thanks to{" "}
-					<UnderlinedLink href="https://sshussain.me/">
-						Suha Hussain
-					</UnderlinedLink>{" "}
-					for dragging me out of my battlefield surgeon bubble into CS
-					and research!
-				</p>
-				<br />
-				<p>
-					In high school, I conducted independent, original research
-					under the supervision of my teachers/upperclassmen at my
-					high school's Math Research program. We then presented our
-					research at research fairs, such as the New York Science and
-					Engineering Fair (NYCSEF) and the Junior Science and
-					Humanities Symposium (JSHS). In my junior and senior years,
-					I co-leaded the program and was in-charge of mentoring
-					underclassmen's research.
-				</p>
-				<br />
-				<p>
-					All of the research I conducted was applying deep learning
-					for automating parts of the medical image diagnosis
-					pipeline, and I trained the models using Google
-					Colaboratory.
-				</p>
+				<SlideIntoViewAnimation>
+					<UppercasedText
+						text={"Introduction"}
+						bold={true}
+						classes={"text-3xl mb-4"}
+					></UppercasedText>
+					<p>
+						AI Research is how I actually got into programming! Big
+						thanks to{" "}
+						<UnderlinedLink href="https://sshussain.me/">
+							Suha Hussain
+						</UnderlinedLink>{" "}
+						for dragging me out of my battlefield surgeon bubble
+						into CS and research!
+					</p>
+					<br />
+					<p>
+						In high school, I conducted independent, original
+						research under the supervision of my
+						teachers/upperclassmen at my high school's Math Research
+						program. We then presented our research at research
+						fairs, such as the New York Science and Engineering Fair
+						(NYCSEF) and the Junior Science and Humanities Symposium
+						(JSHS). In my junior and senior years, I co-leaded the
+						program and was in-charge of mentoring underclassmen's
+						research.
+					</p>
+					<br />
+					<p>
+						All of the research I conducted was applying deep
+						learning for automating parts of the medical image
+						diagnosis pipeline, and I trained the models using
+						Google Colaboratory.
+					</p>
+				</SlideIntoViewAnimation>
 				<SlideIntoViewAnimation>
 					<HSSeniorYearResearch></HSSeniorYearResearch>
 				</SlideIntoViewAnimation>

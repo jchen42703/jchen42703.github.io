@@ -17,11 +17,17 @@
 	src: url("../public/fonts/Apercu-Font/Apercu\ Regular.otf");
 }
 
+html,
 body {
+	overflow-x: hidden;
 	margin: 0;
 	font-family: ApercuRegular, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	position: relative;
 }
 
 code {
