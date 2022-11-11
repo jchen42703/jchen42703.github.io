@@ -6,10 +6,31 @@ import { animateScroll } from "react-scroll";
 
 const ScrollButton = () => {
 	const [scrollPosition, setScrollPosition] = useState(0);
-
+	const [isReversedColor, setIsReversedColor] = useState(false);
 	const displayAfterPx = 150;
 	useEffect(() => {
 		const updatePosition = () => {
+			// Invert the color of the scroll to top button if it overlaps the footer.
+			let footer = document.querySelector("footer");
+			let scrollButton =
+				document.getElementsByClassName("scroll-to-top-btn");
+			if (footer && scrollButton.item(0)) {
+				let rect1 = footer.getBoundingClientRect();
+				let rect2 = scrollButton.item(0)!.getBoundingClientRect();
+				var overlap = !(
+					rect1.right < rect2.left ||
+					rect1.left > rect2.right ||
+					rect1.bottom < rect2.top ||
+					rect1.top > rect2.bottom
+				);
+
+				if (overlap) {
+					setIsReversedColor(true);
+				} else {
+					setIsReversedColor(false);
+				}
+			}
+
 			setScrollPosition(window.pageYOffset);
 		};
 
@@ -52,7 +73,9 @@ const ScrollButton = () => {
 					whileTap={{ scale: 1 }}
 					className="scroll-to-top-btn"
 				>
-					<BsCaretUpSquareFill />
+					<BsCaretUpSquareFill
+						className={isReversedColor ? "text-white" : ""}
+					/>
 				</motion.button>
 			)}
 		</AnimatePresence>
