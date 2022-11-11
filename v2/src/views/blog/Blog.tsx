@@ -28,7 +28,7 @@ function Blog() {
 						<UppercasedText
 							text={text}
 							bold={true}
-							classes="text-7xl"
+							classes="text-5xl md:text-7xl"
 						></UppercasedText>
 					</motion.div>
 				))}
