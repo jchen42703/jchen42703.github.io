@@ -2,6 +2,7 @@ import Welcome from "../../components/Welcome";
 import AboutMe from "./AboutMe";
 import { motion } from "framer-motion";
 import UppercasedText from "../../components/text/UppercasedText";
+import SlideIntoViewAnimation from "../../components/animations/SlideIntoView";
 
 function Home() {
 	const variants = {
@@ -43,7 +44,9 @@ function Home() {
 					</motion.div>
 				))}
 			</Welcome>
-			<AboutMe></AboutMe>
+			<SlideIntoViewAnimation>
+				<AboutMe></AboutMe>
+			</SlideIntoViewAnimation>
 		</>
 	);
 }
