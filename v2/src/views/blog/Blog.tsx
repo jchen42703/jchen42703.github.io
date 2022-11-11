@@ -33,8 +33,10 @@ function Blog() {
 					</motion.div>
 				))}
 			</Welcome>
-			<div className="flex flex-col justify-center items-center h-[50vh] w-full text-3xl">
-				Still in the works ( ˘▽˘)っ♨{" "}
+			<div className="flex flex-col justify-center items-center h-[50vh] mx-8">
+				<p className="text-2xl md:text-3xl text-center">
+					Still in the works ( ˘▽˘)っ♨
+				</p>
 			</div>
 		</div>
 	);
