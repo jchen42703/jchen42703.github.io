@@ -10,8 +10,8 @@ function Home() {
 		show: {
 			y: 0,
 			transition: {
-				staggerChildren: 0.5,
-				delayChildren: 0.3,
+				staggerChildren: 0.4,
+				delayChildren: 0.2,
 			},
 		},
 	};
