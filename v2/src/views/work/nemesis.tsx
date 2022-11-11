@@ -95,13 +95,19 @@ function NemesisExperience() {
 				<br />
 				<ul className="list-items mt-2">
 					<li>
-						Nemesis v1:
-						Javascript/Typescript/Svelte/Tailwind/Electron
+						<b>Nemesis v1: </b>
+						Javascript/Typescript, Svelte, Tailwind, Electron
 						(web3.js/ethers.js)
 					</li>
-					<li>DevOps: GitHub Actions, Lerna, Verdaccio</li>
-					<li>Reverse Engineering: Charles Proxy, Insomnia</li>
-					<li>Misc. APIs: Go, Typescript, Express</li>
+					<li>
+						<b>DevOps: </b> GitHub Actions, Lerna, Verdaccio
+					</li>
+					<li>
+						<b>Reverse Engineering:</b> Charles Proxy, Insomnia
+					</li>
+					<li>
+						<b>Misc. APIs: </b> Go, Typescript, Express
+					</li>
 				</ul>
 
 				<UppercasedText
