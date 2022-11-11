@@ -53,7 +53,7 @@ function HSJuniorYearResearch() {
 					<li>
 						<b>Code: </b>{" "}
 						<UnderlinedLink href="https://github.com/jchen42703/CapsNetsLASeg">
-							https://github.com/jchen42703/CapsNetsLASeg
+							jchen42703/CapsNetsLASeg
 						</UnderlinedLink>
 					</li>
 					<li>
