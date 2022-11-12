@@ -13,7 +13,7 @@ function NemesisExperience() {
 			{/* Timeline */}
 			<div className="col-span-1">
 				<UppercasedText
-					text={"Jan-July 2022"}
+					text={"Jan-Jul 2022"}
 					bold={true}
 					classes={"text-2xl"}
 				></UppercasedText>
