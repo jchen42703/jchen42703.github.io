@@ -58,7 +58,7 @@ export const navFields = [
 	},
 	{
 		title: "<Resume />",
-		href: "https://github.com/jchen42703/resumes/blob/main/latest_generic.pdf",
+		href: "https://drive.google.com/file/d/1MpZNzK0aGmwFKwQm017eNwnBJvhEBqre/view?usp=share_link",
 	},
 	{
 		title: "<Contact Me />",
