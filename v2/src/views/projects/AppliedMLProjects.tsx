@@ -4,6 +4,7 @@ import UppercasedText from "../../components/text/UppercasedText";
 import Welcome from "../../components/Welcome";
 import EasierMTLProject from "./appliedML/EasierMTLProject";
 import EQForecastProject from "./appliedML/EQForecastProject";
+import HackingMed2019 from "./appliedML/HackingMed2019";
 import IntroAppliedML from "./appliedML/IntroAppliedML";
 
 /**
@@ -51,6 +52,9 @@ function AppliedMLProjects() {
 				</SlideIntoViewAnimation>
 				<SlideIntoViewAnimation>
 					<EQForecastProject></EQForecastProject>
+				</SlideIntoViewAnimation>
+				<SlideIntoViewAnimation>
+					<HackingMed2019></HackingMed2019>
 				</SlideIntoViewAnimation>
 			</div>
 		</div>
