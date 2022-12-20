@@ -1,5 +1,7 @@
 import UppercasedText from "../../../components/text/UppercasedText";
 import UnderlinedLink from "../../../components/UnderlinedLink";
+import VideoGIF from "../../../components/video/videoGIF";
+import eqForecastVid from "../../../assets/small_eq_damage_forecast.mp4";
 
 /**
  * EQForecastProject Component
@@ -72,6 +74,9 @@ function EQForecastProject() {
 						Ocean
 					</li>
 				</ul>
+				<div className="flex flex-col justify-center items-center w-[100%] my-4">
+					<VideoGIF src={eqForecastVid} className={""}></VideoGIF>
+				</div>
 			</div>
 		</div>
 	);
