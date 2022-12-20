@@ -2,6 +2,7 @@ import { motion, Variants } from "framer-motion";
 import SlideIntoViewAnimation from "../../components/animations/SlideIntoView";
 import UppercasedText from "../../components/text/UppercasedText";
 import Welcome from "../../components/Welcome";
+import GravWave from "./kaggle/GravWave";
 import IntroKaggle from "./kaggle/IntroAppliedML";
 
 /**
@@ -45,6 +46,7 @@ function KaggleProjects() {
 						bold={true}
 						classes={"text-3xl"}
 					></UppercasedText>
+					<GravWave></GravWave>
 				</SlideIntoViewAnimation>
 			</div>
 		</div>
