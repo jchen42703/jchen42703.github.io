@@ -41,6 +41,10 @@ https://github.com/jchen42703/MathResearchQHSS -->
 
 ## Kaggle
 
+### Graviational Wave Detection
+
+https://github.com/jchen42703/g2net_ml_dl
+
 ### Steel Defect Detection
 
 https://github.com/jchen42703/steel-defect-detection
