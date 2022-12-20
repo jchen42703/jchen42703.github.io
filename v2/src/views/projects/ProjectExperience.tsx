@@ -1,6 +1,8 @@
 import { motion, Variants } from "framer-motion";
+import SlideIntoViewAnimation from "../../components/animations/SlideIntoView";
 import UppercasedText from "../../components/text/UppercasedText";
 import Welcome from "../../components/Welcome";
+import FullStackProjects from "./FullStack";
 
 /**
  * Project Experience Component
@@ -33,10 +35,10 @@ function ProjectExperience() {
 					</motion.div>
 				))}
 			</Welcome>
-			<div className="flex flex-col justify-center items-center h-[50vh] mx-8">
-				<p className="text-2xl md:text-3xl text-center">
-					Still in the works ( ˘▽˘)っ♨
-				</p>
+			<div className="content-container-no-top">
+				<SlideIntoViewAnimation>
+					<FullStackProjects></FullStackProjects>
+				</SlideIntoViewAnimation>
 			</div>
 		</div>
 	);
