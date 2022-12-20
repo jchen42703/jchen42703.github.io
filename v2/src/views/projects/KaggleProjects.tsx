@@ -2,7 +2,7 @@ import { motion, Variants } from "framer-motion";
 import SlideIntoViewAnimation from "../../components/animations/SlideIntoView";
 import UppercasedText from "../../components/text/UppercasedText";
 import Welcome from "../../components/Welcome";
-import FullStackProjects from "./webDev/LyneProject";
+import IntroKaggle from "./kaggle/IntroAppliedML";
 
 /**
  * KaggleProjects Component
@@ -35,9 +35,16 @@ function KaggleProjects() {
 					</motion.div>
 				))}
 			</Welcome>
+			<SlideIntoViewAnimation>
+				<IntroKaggle></IntroKaggle>
+			</SlideIntoViewAnimation>
 			<div className="content-container-no-top">
 				<SlideIntoViewAnimation>
-					<FullStackProjects></FullStackProjects>
+					<UppercasedText
+						text={"Timeline"}
+						bold={true}
+						classes={"text-3xl"}
+					></UppercasedText>
 				</SlideIntoViewAnimation>
 			</div>
 		</div>
