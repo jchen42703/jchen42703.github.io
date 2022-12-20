@@ -29,6 +29,7 @@ function SteelDefect() {
 				<br />
 				<p>
 					Built CNNs to automatically detect steel defects in images.
+					Placed 171/2431.
 				</p>
 				<ul>
 					<li>
