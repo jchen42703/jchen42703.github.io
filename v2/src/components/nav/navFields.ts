@@ -16,20 +16,15 @@ export const workFields = [
 export const projectsFields = [
 	{
 		title: "<Applied ML />",
-		href: "#applied-ml",
+		href: "/applied-ml",
 	},
 	{
-		title: "<Full Stack Dev />",
-		href: "#fullstack",
+		title: "<Web Dev />",
+		href: "/web-dev",
 	},
-	{
-		title: "<DevOps />",
-		href: "#devops",
-	},
-
 	{
 		title: "<Kaggle />",
-		href: "#kaggle",
+		href: "/kaggle",
 	},
 ];
 

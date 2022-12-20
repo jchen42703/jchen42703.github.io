@@ -10,7 +10,10 @@ import ResearchExperience from "./views/research/ResearchExperience";
 import Home from "./views/home/Home";
 import Blog from "./views/blog/Blog";
 import ErrorPage from "./views/error";
+import KaggleProjects from "./views/projects/KaggleProjects";
 import "./styles/styles.scss";
+import WebDevProjects from "./views/projects/WebDevProjects";
+import AppliedMLProjects from "./views/projects/AppliedMLProjects";
 
 library.add(fab);
 
@@ -31,6 +34,18 @@ const router = createBrowserRouter([
 	{
 		path: "projects",
 		element: <ProjectExperience />,
+	},
+	{
+		path: "projects/web-dev",
+		element: <WebDevProjects />,
+	},
+	{
+		path: "projects/applied-ml",
+		element: <AppliedMLProjects />,
+	},
+	{
+		path: "projects/kaggle",
+		element: <KaggleProjects />,
 	},
 	{
 		path: "blog",
