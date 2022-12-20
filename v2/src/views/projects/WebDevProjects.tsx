@@ -40,12 +40,12 @@ function WebDevProjects() {
 				<IntroWebDev></IntroWebDev>
 			</SlideIntoViewAnimation>
 			<div className="content-container-no-top">
-				<UppercasedText
-					text={"Timeline"}
-					bold={true}
-					classes={"text-3xl"}
-				></UppercasedText>
 				<SlideIntoViewAnimation>
+					<UppercasedText
+						text={"Timeline"}
+						bold={true}
+						classes={"text-3xl"}
+					></UppercasedText>
 					<LyneProject></LyneProject>
 				</SlideIntoViewAnimation>
 				<SlideIntoViewAnimation>
