@@ -18,12 +18,12 @@ function IntroAppliedML() {
 			</p>
 			<ul className="mt-4">
 				<li>
-					Earthquake Damage Forecasting
-					(React/FastAPI/Catboost/LightGBM)
-				</li>
-				<li>
 					EasierMTL Quantized BERT Demo
 					(React/FastAPI/PyTorch/HuggingFace)
+				</li>
+				<li>
+					Earthquake Damage Forecasting
+					(React/FastAPI/Catboost/LightGBM)
 				</li>
 				<li>Hacking Medicine 2019 (Flask/Keras)</li>
 			</ul>
