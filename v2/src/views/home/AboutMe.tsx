@@ -17,7 +17,7 @@ function AboutMe() {
 				humanize my project and work experiences and try to make it easy
 				to navigate! If you want a TLDR, feel free to take a look at my
 				resume{" "}
-				<UnderlinedLink href="https://github.com/jchen42703/resumes/blob/main/latest_generic.pdf">
+				<UnderlinedLink href="https://drive.google.com/file/d/1MpZNzK0aGmwFKwQm017eNwnBJvhEBqre/view?usp=share_link">
 					here
 				</UnderlinedLink>
 				. Quick caveat: the linked resume excludes 3+ years of research

@@ -16,7 +16,7 @@ const Footer = () => {
 			</p>
 			<div className="flex flex-row justify-center w-[100%] gap-x-8">
 				<a
-					href="https://www.linkedin.com/in/joseph-chen2024"
+					href="https://www.linkedin.com/in/josephchen2024"
 					className="fab"
 					target="_blank"
 					rel="noreferrer"
