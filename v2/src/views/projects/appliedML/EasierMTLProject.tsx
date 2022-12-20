@@ -50,8 +50,8 @@ function EasierMTLProject() {
 					</li>
 					<li>
 						<b>Website: </b>{" "}
-						<UnderlinedLink href="http://easiermtl.com/">
-							http://easiermtl.com/
+						<UnderlinedLink href="https://easiermtl.com/">
+							https://easiermtl.com/
 						</UnderlinedLink>
 					</li>
 				</ul>
