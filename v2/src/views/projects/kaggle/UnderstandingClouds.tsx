@@ -2,21 +2,21 @@ import UppercasedText from "../../../components/text/UppercasedText";
 import UnderlinedLink from "../../../components/UnderlinedLink";
 
 /**
- * SteelDefect Component
+ * UnderstandingClouds Component
  */
-function SteelDefect() {
+function UnderstandingClouds() {
 	return (
 		<div className="work-content-container">
 			<div className="col-span-1">
 				<UppercasedText
-					text={"Oct 2019"}
+					text={"Nov 2019"}
 					bold={true}
 					classes={"text-2xl"}
 				></UppercasedText>
 			</div>
 			<div className="col-span-3">
 				<UppercasedText
-					text={"Severstal: Steel Defect Detection"}
+					text={"Understanding Clouds from Satellite Images"}
 					bold={true}
 					classes={"text-2xl inline-block"}
 				></UppercasedText>
@@ -28,14 +28,14 @@ function SteelDefect() {
 				></UppercasedText>
 				<br />
 				<p>
-					Built CNNs to automatically detect steel defects in images.
-					Placed 171/2431.
+					Built CNNs for automating cloud structure segmentation from
+					satellite images. Placed 247/1538.
 				</p>
 				<ul>
 					<li>
 						<b>Code: </b>
-						<UnderlinedLink href="https://github.com/jchen42703/steel-defect-detection">
-							jchen42703/steel-defect-detection
+						<UnderlinedLink href="https://github.com/jchen42703/understanding-clouds-kaggle">
+							jchen42703/understanding-clouds-kaggle
 						</UnderlinedLink>
 					</li>
 				</ul>
@@ -56,4 +56,4 @@ function SteelDefect() {
 	);
 }
 
-export default SteelDefect;
+export default UnderstandingClouds;
