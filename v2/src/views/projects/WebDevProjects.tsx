@@ -2,6 +2,7 @@ import { motion, Variants } from "framer-motion";
 import SlideIntoViewAnimation from "../../components/animations/SlideIntoView";
 import UppercasedText from "../../components/text/UppercasedText";
 import Welcome from "../../components/Welcome";
+import IntroWebDev from "./webDev/IntroWebDev";
 import LyneProject from "./webDev/LyneProject";
 
 /**
@@ -35,9 +36,24 @@ function WebDevProjects() {
 					</motion.div>
 				))}
 			</Welcome>
+			<SlideIntoViewAnimation>
+				<IntroWebDev></IntroWebDev>
+			</SlideIntoViewAnimation>
 			<div className="content-container-no-top">
+				<UppercasedText
+					text={"Timeline"}
+					bold={true}
+					classes={"text-3xl"}
+				></UppercasedText>
 				<SlideIntoViewAnimation>
 					<LyneProject></LyneProject>
+				</SlideIntoViewAnimation>
+				<SlideIntoViewAnimation>
+					<div className="flex flex-col justify-center items-center h-[50vh] mx-8">
+						<p className="text-2xl md:text-3xl text-center">
+							Still in the works ( ˘▽˘)っ♨
+						</p>
+					</div>
 				</SlideIntoViewAnimation>
 			</div>
 		</div>

@@ -6,7 +6,7 @@ import UnderlinedLink from "../../../components/UnderlinedLink";
  */
 function LyneProject() {
 	return (
-		<div className="work-content-container">
+		<div id="lyne" className="work-content-container">
 			<div className="col-span-1">
 				<UppercasedText
 					text={"Spring 2022"}
