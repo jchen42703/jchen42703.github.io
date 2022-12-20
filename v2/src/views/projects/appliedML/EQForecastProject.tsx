@@ -33,9 +33,15 @@ function EQForecastProject() {
 				</p>
 				<ul>
 					<li>
-						<b>Code + Table Of Contents: </b>{" "}
+						<b>Code: </b>{" "}
 						<UnderlinedLink href="https://github.com/jchen42703/earthquake_forecasting">
 							jchen42703/earthquake_forecasting
+						</UnderlinedLink>
+					</li>
+					<li>
+						<b>Jupyter Notebooks (Model Dev & EDA): </b>{" "}
+						<UnderlinedLink href="https://github.com/jchen42703/earthquake_forecasting/tree/main/notebooks">
+							jchen42703/earthquake_forecasting/notebooks
 						</UnderlinedLink>
 					</li>
 					<li>
