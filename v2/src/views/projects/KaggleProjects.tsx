@@ -4,6 +4,7 @@ import UppercasedText from "../../components/text/UppercasedText";
 import Welcome from "../../components/Welcome";
 import GravWave from "./kaggle/GravWave";
 import IntroKaggle from "./kaggle/IntroAppliedML";
+import SteelDefect from "./kaggle/SteelDefect";
 
 /**
  * KaggleProjects Component
@@ -47,6 +48,9 @@ function KaggleProjects() {
 						classes={"text-3xl"}
 					></UppercasedText>
 					<GravWave></GravWave>
+				</SlideIntoViewAnimation>
+				<SlideIntoViewAnimation>
+					<SteelDefect></SteelDefect>
 				</SlideIntoViewAnimation>
 			</div>
 		</div>
