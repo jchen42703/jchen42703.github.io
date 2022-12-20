@@ -22,7 +22,7 @@ function EQForecastProject() {
 				></UppercasedText>
 				<br />
 				<UppercasedText
-					text={"Current"}
+					text={"Sophomore Year of College"}
 					bold={true}
 					classes={"text-1xl"}
 				></UppercasedText>
