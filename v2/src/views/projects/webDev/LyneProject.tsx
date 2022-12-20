@@ -1,10 +1,10 @@
-import UppercasedText from "../../components/text/UppercasedText";
-import UnderlinedLink from "../../components/UnderlinedLink";
+import UppercasedText from "../../../components/text/UppercasedText";
+import UnderlinedLink from "../../../components/UnderlinedLink";
 
 /**
- * FullStackProjects Component
+ * LyneProject Component
  */
-function FullStackProjects() {
+function LyneProject() {
 	return (
 		<div className="work-content-container">
 			<div className="col-span-1">
@@ -107,4 +107,4 @@ function FullStackProjects() {
 	);
 }
 
-export default FullStackProjects;
+export default LyneProject;

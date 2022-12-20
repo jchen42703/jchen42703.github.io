@@ -2,7 +2,7 @@ import { motion, Variants } from "framer-motion";
 import SlideIntoViewAnimation from "../../components/animations/SlideIntoView";
 import UppercasedText from "../../components/text/UppercasedText";
 import Welcome from "../../components/Welcome";
-import FullStackProjects from "./FullStack";
+import FullStackProjects from "./webDev/LyneProject";
 
 /**
  * AppliedMLProjects Component

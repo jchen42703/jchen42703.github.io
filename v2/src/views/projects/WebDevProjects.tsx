@@ -2,7 +2,7 @@ import { motion, Variants } from "framer-motion";
 import SlideIntoViewAnimation from "../../components/animations/SlideIntoView";
 import UppercasedText from "../../components/text/UppercasedText";
 import Welcome from "../../components/Welcome";
-import FullStackProjects from "./FullStack";
+import LyneProject from "./webDev/LyneProject";
 
 /**
  * WebDevProjects Component
@@ -37,7 +37,7 @@ function WebDevProjects() {
 			</Welcome>
 			<div className="content-container-no-top">
 				<SlideIntoViewAnimation>
-					<FullStackProjects></FullStackProjects>
+					<LyneProject></LyneProject>
 				</SlideIntoViewAnimation>
 			</div>
 		</div>
