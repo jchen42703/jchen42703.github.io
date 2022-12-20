@@ -1,57 +1,57 @@
 import UppercasedText from "../../../components/text/UppercasedText";
 import UnderlinedLink from "../../../components/UnderlinedLink";
+import VideoGIF from "../../../components/video/videoGIF";
 
 /**
  * EasierMTLProject Component
  */
 function EasierMTLProject() {
 	return (
-		<div id="lyne" className="work-content-container">
+		<div className="work-content-container">
 			<div className="col-span-1">
 				<UppercasedText
-					text={"Spring 2022"}
+					text={"Spring 2022-Now"}
 					bold={true}
 					classes={"text-2xl"}
 				></UppercasedText>
 			</div>
 			<div className="col-span-3">
 				<UppercasedText
-					text={"Lyne"}
+					text={"EasierMTL"}
 					bold={true}
 					classes={"text-2xl inline-block"}
 				></UppercasedText>
 				<br />
 				<UppercasedText
-					text={"Sophomore Year of College"}
+					text={"Current"}
 					bold={true}
 					classes={"text-1xl"}
 				></UppercasedText>
 				<br />
 				<p>
-					Built a fullstack web app for helping businesses and clinics
-					manage lines of people with a ticket system with a team of
-					6. It was my first time leading a large team to deploy a
-					fullstack application end-to-end.
+					Built a fullstack web application for using a deep learning
+					model to translate text. I reduced API latecy by 53% by
+					quantizing the model. I also built a CLI to automatically
+					deploy and load-test the API. Right now, the website just
+					shows a demo of the model,{" "}
+					<b>
+						but I'm currently working on the complete novel
+						translation platform.
+					</b>{" "}
+					You can find more specific information on the GitHub Table
+					of Contents.
 				</p>
 				<ul>
 					<li>
-						<b>Code: </b>{" "}
-						<UnderlinedLink href="https://github.com/jchen42703/waiting-line-app">
-							jchen42703/waiting-line-app
+						<b>Code + Table Of Contents: </b>{" "}
+						<UnderlinedLink href="https://github.com/EasierMTL/chinese-translation-app">
+							EasierMTL/chinese-translation-app
 						</UnderlinedLink>
 					</li>
 					<li>
-						<b>Meeting and Design Docs: </b>{" "}
-						<UnderlinedLink href="https://github.com/jchen42703/waiting-line-app/tree/main/docs">
-							jchen42703/waiting-line-app/docs
-						</UnderlinedLink>
-					</li>
-					<li>
-						<b>
-							All Documentation (SRS, Design Docs, Presentation):{" "}
-						</b>{" "}
-						<UnderlinedLink href="https://drive.google.com/drive/folders/1kE0y-kemQI49irKUppbNU1oIWXYcNU4m?usp=share_link">
-							CSDS 393
+						<b>Website: </b>{" "}
+						<UnderlinedLink href="http://easiermtl.com/">
+							http://easiermtl.com/
 						</UnderlinedLink>
 					</li>
 				</ul>
@@ -63,45 +63,31 @@ function EasierMTLProject() {
 				<br />
 				<ul className="list-items mt-2">
 					<li>
-						<b>Frontend:</b> React, Typescript, TailwindCSS,
-						ChakraUI, SCSS
+						<b>Frontend:</b> React, Next.js, Typescript,
+						TailwindCSS, Draft.js (Migrating to Lexical soon)
 					</li>
 					<li>
-						<b>Backend:</b> Express, Typescript, MongoDB
+						<b>Backend: </b> FastAPI
 					</li>
 					<li>
-						<b>DevOps: </b> Docker, Lerna, NGINX, Digital Ocean
+						<b>Model Development: </b> PyTorch, Hugging Face
 					</li>
 					<li>
-						<b>Management: </b> Jira, GitHub
+						<b>Load Testing: </b> Terraform, Locust
+					</li>
+					<li>
+						<b>DevOps: </b> Docker, Kubernetes (Google Cloud & GKE),
+						NGINX
 					</li>
 				</ul>
-				<UppercasedText
-					text={"What I Did"}
-					bold={true}
-					classes={"text-1xl inline-block mt-2"}
-				></UppercasedText>
-				<br />
-				<ul className="list-items mt-2">
-					<li>
-						Led meetings, reviewed code, led pair programming
-						sessions to onboard members not familiar with our stack,
-						and set code and GitOps standards.
-					</li>
-					<li>
-						Wrote React dashboards for managing users in line and
-						creating/deleting queues.
-					</li>
-					<li>
-						Wrote Express endpoints for social sign-in for
-						Google/Facebook and for user/queue management.
-					</li>
-					<li>
-						Deployed the application with Docker and NGINX to a
-						Digital Ocean instance. (Is currently shutdown because
-						I'm broke ☹)
-					</li>
-				</ul>
+				<div className="flex flex-col justify-center items-center w-[100%] my-4">
+					<VideoGIF
+						src={
+							"https://user-images.githubusercontent.com/34604336/205464990-cbc08d4c-ee56-4e15-9704-5ab9ee27931f.mp4"
+						}
+						className={""}
+					></VideoGIF>
+				</div>
 			</div>
 		</div>
 	);
