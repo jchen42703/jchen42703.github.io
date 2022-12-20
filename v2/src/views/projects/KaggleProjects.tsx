@@ -4,6 +4,7 @@ import UppercasedText from "../../components/text/UppercasedText";
 import Welcome from "../../components/Welcome";
 import GravWave from "./kaggle/GravWave";
 import IntroKaggle from "./kaggle/IntroAppliedML";
+import Pneumothorax from "./kaggle/Pneumothorax";
 import SteelDefect from "./kaggle/SteelDefect";
 import UnderstandingClouds from "./kaggle/UnderstandingClouds";
 
@@ -55,6 +56,9 @@ function KaggleProjects() {
 				</SlideIntoViewAnimation>
 				<SlideIntoViewAnimation>
 					<SteelDefect></SteelDefect>
+				</SlideIntoViewAnimation>
+				<SlideIntoViewAnimation>
+					<Pneumothorax></Pneumothorax>
 				</SlideIntoViewAnimation>
 			</div>
 		</div>
