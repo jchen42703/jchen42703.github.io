@@ -5,15 +5,29 @@
 -   [Full Stack](#full-stack)
 -   [Kaggle](#kaggle)
 
-## Full Stack
+## Applied ML
 
-### Lyne
+### Earthquake Damage Forecasting
 
-https://github.com/jchen42703/waiting-line-app
+https://earthquakedamageforecast.com/
+
+https://github.com/jchen42703/earthquake_forecasting
+
+### Chinese-English Translation with DL Models
+
+https://github.com/EasierMTL/asian_mtl
+
+https://github.com/EasierMTL/chinese-translation-app
 
 ### Hacking Medicine 2019
 
 https://github.com/jchen42703/hacking_medicine_2019
+
+## Web Dev
+
+### Lyne
+
+https://github.com/jchen42703/waiting-line-app
 
 ### Translator App
 
