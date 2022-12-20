@@ -3,6 +3,7 @@ import SlideIntoViewAnimation from "../../components/animations/SlideIntoView";
 import UppercasedText from "../../components/text/UppercasedText";
 import Welcome from "../../components/Welcome";
 import EasierMTLProject from "./appliedML/EasierMTLProject";
+import EQForecastProject from "./appliedML/EQForecastProject";
 import IntroAppliedML from "./appliedML/IntroAppliedML";
 
 /**
@@ -47,6 +48,9 @@ function AppliedMLProjects() {
 						classes={"text-3xl"}
 					></UppercasedText>
 					<EasierMTLProject></EasierMTLProject>
+				</SlideIntoViewAnimation>
+				<SlideIntoViewAnimation>
+					<EQForecastProject></EQForecastProject>
 				</SlideIntoViewAnimation>
 			</div>
 		</div>
