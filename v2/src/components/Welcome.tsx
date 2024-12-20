@@ -18,7 +18,7 @@ function Welcome({
 		query: mediaQueries.limitToMobile,
 	});
 
-	const noLinkFields = ["Joseph Chen", "NYC, NY", "CS 3rd Year @ CWRU"];
+	const noLinkFields = ["Joseph Chen", "NYC, NY"];
 
 	// Responsively renders the top components (basic info + nav menu)
 	const renderTop = () => {
