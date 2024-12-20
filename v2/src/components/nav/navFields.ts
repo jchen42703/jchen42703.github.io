@@ -1,5 +1,9 @@
 export const workFields = [
 	{
+		title: "<Munch Insights />",
+		href: "#munch-insights",
+	},
+	{
 		title: "<Nemesis />",
 		href: "#nemesis",
 	},
@@ -42,11 +46,11 @@ export const navFields = [
 		title: "<Machine Learning Research />",
 		href: "/research",
 	},
-	{
-		title: "<Projects />",
-		href: "/projects",
-		subFields: projectsFields,
-	},
+	// {
+	// 	title: "<Projects />",
+	// 	href: "/projects",
+	// 	subFields: projectsFields,
+	// },
 	{
 		title: "<Blog />",
 		href: "/blog",

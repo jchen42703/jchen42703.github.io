@@ -34,7 +34,7 @@ function Home() {
 	return (
 		<>
 			<Welcome variants={variants}>
-				{["Founder", "@", "Munch Insights"].map((text, i) => (
+				{["Founder", "@", "Munch", "Insights"].map((text, i) => (
 					<motion.div key={text} variants={textVariants[i]}>
 						<UppercasedText
 							text={text}
