@@ -1,7 +1,5 @@
 # Personal Website
 
-https://user-images.githubusercontent.com/34604336/201234099-71a7f11d-6206-49e9-a4fb-e2eefc3ae703.mp4
-
 My personal website created in React and deployed with Vercel to [https://therealjosephchen.com/](https://therealjosephchen.com/).
 
 ## Getting Started [v2]
