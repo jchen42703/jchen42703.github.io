@@ -5,6 +5,7 @@ import Parallaxis2020Experience from "../work/parallaxis2020";
 import Parallaxis2021Experience from "../work/parallaxis2021";
 import SlideIntoViewAnimation from "../../components/animations/SlideIntoView";
 import Welcome from "../../components/Welcome";
+import GardeExperience from "./garde";
 import MunchExperience from "./munchinsights";
 
 /**
@@ -39,6 +40,9 @@ function WorkExperience() {
 				))}
 			</Welcome>
 			<div className="content-container-no-top">
+				<SlideIntoViewAnimation>
+					<GardeExperience />
+				</SlideIntoViewAnimation>
 				<SlideIntoViewAnimation>
 					<MunchExperience />
 				</SlideIntoViewAnimation>

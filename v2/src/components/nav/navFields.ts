@@ -1,5 +1,9 @@
 export const workFields = [
 	{
+		title: "<Garde />",
+		href: "#garde",
+	},
+	{
 		title: "<Munch Insights />",
 		href: "#munch-insights",
 	},

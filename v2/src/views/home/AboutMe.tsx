@@ -16,8 +16,7 @@ function AboutMe() {
 			<p className="mt-4">
 				Hi, I'm Joseph. I started in deep learning research for medical
 				diagnoses, then pivoted to software engineering to ship ML into
-				real products. Today I'm CTO at Munch Insights, building
-				ML-powered tools for the restaurant industry.
+				real products. Today I'm CTO & Founder at Garde.
 			</p>
 			<br />
 			<p>

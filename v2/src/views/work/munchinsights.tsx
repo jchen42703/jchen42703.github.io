@@ -1,6 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import UppercasedText from "../../components/text/UppercasedText";
-import munchExample from "../../assets/munch.png";
 import UnderlinedLink from "../../components/UnderlinedLink";
 
 /**
@@ -11,21 +10,16 @@ function MunchExperience() {
 		<div id="munch-insights" className="work-content-container">
 			<div className="col-span-1">
 				<UppercasedText
-					text={"March 2023-Now"}
+					text={"March 2023-March 2026"}
 					bold={true}
 					classes={"text-2xl"}
 				></UppercasedText>
 			</div>
 			<div className="col-span-3">
-				<img
-					src={munchExample}
-					alt="Munch Example"
-					className="rounded-md"
-				/>
 				<UppercasedText
 					text={"Munch Insights"}
 					bold={true}
-					classes={"text-2xl inline-block mt-4"}
+					classes={"text-2xl inline-block"}
 				></UppercasedText>
 				<br />
 				<UppercasedText

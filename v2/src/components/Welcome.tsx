@@ -18,7 +18,7 @@ function Welcome({
 		query: mediaQueries.limitToMobile,
 	});
 
-	const noLinkFields = ["Joseph Chen", "CTO @ Munch Insights"];
+	const noLinkFields = ["Joseph Chen", "CTO & Founder @ Garde"];
 
 	// Responsively renders the top components (basic info + nav menu)
 	const renderTop = () => {
