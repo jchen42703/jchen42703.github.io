@@ -11,8 +11,8 @@ const Footer = () => {
 				classes={"text-3xl"}
 			></UppercasedText>
 			<p className="my-4">
-				Contact me at jchen42703 "at" gmail "dot" com or at jxc1598 "at"
-				case.edu.
+				Contact me at jchen42703 "at" gmail "dot" com or at joseph
+				"at" munchinsights "dot" com.
 			</p>
 			<div className="flex flex-row justify-center w-[100%] gap-x-8">
 				<a

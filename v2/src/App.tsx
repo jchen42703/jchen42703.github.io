@@ -8,7 +8,6 @@ import ProjectExperience from "./views/projects/ProjectExperience";
 import WorkExperience from "./views/work/WorkExperience";
 import ResearchExperience from "./views/research/ResearchExperience";
 import Home from "./views/home/Home";
-import Blog from "./views/blog/Blog";
 import ErrorPage from "./views/error";
 import KaggleProjects from "./views/projects/KaggleProjects";
 import "./styles/styles.scss";
@@ -46,10 +45,6 @@ const router = createBrowserRouter([
 	{
 		path: "projects/kaggle",
 		element: <KaggleProjects />,
-	},
-	{
-		path: "blog",
-		element: <Blog />,
 	},
 ]);
 

@@ -8,9 +8,7 @@ import UnderlinedLink from "../../components/UnderlinedLink";
  */
 function MunchExperience() {
 	return (
-		<div id="nemesis" className="work-content-container">
-			{/* Description with Timeline */}
-			{/* Timeline */}
+		<div id="munch-insights" className="work-content-container">
 			<div className="col-span-1">
 				<UppercasedText
 					text={"March 2023-Now"}
@@ -31,12 +29,12 @@ function MunchExperience() {
 				></UppercasedText>
 				<br />
 				<UppercasedText
-					text={"CTO"}
+					text={"Technical Founder"}
 					bold={true}
 					classes={"text-1xl"}
 				></UppercasedText>
-				<br />
-				<div className="flex flex-row">
+				<p className="mt-1 italic">NYC, New York</p>
+				<div className="flex flex-row mt-2">
 					<UnderlinedLink
 						href="https://munchinsights.com/"
 						className="mr-2"
@@ -67,7 +65,7 @@ function MunchExperience() {
 							className="fontawesome"
 						/>
 					</a>
-                    <a
+					<a
 						href="https://www.instagram.com/munchinsights/"
 						className="fab mr-2"
 						target="_blank"
@@ -79,8 +77,6 @@ function MunchExperience() {
 						/>
 					</a>
 				</div>
-
-                <p>Working on building the dream restaurant franchise analytics platform :)</p>
 			</div>
 		</div>
 	);

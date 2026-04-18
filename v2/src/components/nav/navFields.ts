@@ -8,11 +8,11 @@ export const workFields = [
 		href: "#nemesis",
 	},
 	{
-		title: "<Parallaxis (SWE) />",
+		title: "<Rattenfanger (SWE) />",
 		href: "#parallaxis-swe",
 	},
 	{
-		title: "<Parallaxis (ML) />",
+		title: "<Rattenfanger (ML) />",
 		href: "#parallaxis-ml",
 	},
 ];
@@ -51,14 +51,6 @@ export const navFields = [
 	// 	href: "/projects",
 	// 	subFields: projectsFields,
 	// },
-	{
-		title: "<Blog />",
-		href: "/blog",
-	},
-	{
-		title: "<Resume />",
-		href: "https://drive.google.com/file/d/1MpZNzK0aGmwFKwQm017eNwnBJvhEBqre/view?usp=share_link",
-	},
 	{
 		title: "<Contact Me />",
 		href: "#contact",
